@@ -436,16 +436,18 @@ p {
     
 }
 
+/*
 li.sisr {
     position: relative;
 left: 50px;
+padding-left: 10px;
 }
 
 li.slam {
     position: relative;
 left: 50px;
 }
-
+*/
 element.style {
     margin-top: 2vh;
     background-color: white;
