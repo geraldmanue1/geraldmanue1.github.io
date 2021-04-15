@@ -376,6 +376,7 @@ h4 {
   margin: 1rem;
   position: relative;
   width: 300px;
+  max-width: 100%;
 }
 
 .card-1 {
