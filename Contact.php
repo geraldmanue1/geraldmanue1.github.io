@@ -109,7 +109,7 @@
               
 
                 <div class="wrap-contact100">
-                    <form class="contact100-form validate-form"  method="POST" action="">
+                    <form class="contact100-form validate-form"  method="POST" action="Contact.php">
                         <span class="contact100-form-title">
                             Envoier votre message ici ! 
                         </span>
