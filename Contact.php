@@ -1,24 +1,74 @@
+<?php
 
-    <?php
-    if(isset($_POST['message'])){
-        $entete  = 'MIME-Version: 1.0' . "\r\n";
-        $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        $entete .= 'From: ' . $_POST['email'] . "\r\n";
-
-        $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
-        <p><b>Nom : </b>' . $_POST['first-name'] . '<br>
-        <p><b>Prenom : </b>' . $_POST['last-name'] . '<br>
-        <b>Email : </b>' . $_POST['email'] . '<br>
-        <b>Télephone: </b>' . $_POST['phone'] . '<br>
-
-        <b>Message : </b>' . $_POST['message'] . '</p>';
-
-        $retour = mail('gerald.manuel.e@gmail.com', 'Envoi depuis page Contact', $message, $entete);
-        if($retour) {
-            echo '<p>Votre message a bien été envoyé.</p>';
-        }
-    }
-    ?>
+	$email= "geraldmanuel96@gmail.com";  /*****ENTER_FROM_EMAIL_ADDRESS*****/
+	$name= "MANUEL Gerald";				/*****ENTER_A_NAME*****/
+	$body= "Bienvenue dans mon premier email sendgrid ....!";
+	$subject= "Premier e-mail sendgrid";
 
 
-    
+	$headers= array(
+
+			'Authorization: Bearer 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',  /*****ENTER_YOUR_API_KEY*****/
+			'Content-Type: application/json'
+	);
+
+
+
+	$data = array(
+
+			"personalizations" => array(
+
+				array(
+
+					"to" =>array(
+
+						array(
+
+							"email" =>"geraldmanuel96@gmail.com", /*****ENTER_TO_EMAIL_ADDRESS*****/
+							"name"  => $name
+						)
+					)
+				)
+
+			),
+
+
+			"from" => array(
+
+				"email"=> $email
+			),
+
+
+			"subject" =>$subject,
+			"content" =>array(
+
+					array(
+
+						"type" => "text/html",
+						"value" => $body
+					)
+			)
+
+
+	);
+
+
+	$ch = curl_init();
+
+	curl_setopt($ch, CURLOPT_URL, "https://api.sendgrid.com/v3/mail/send");
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+	curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	
+	$response = curl_exec($ch);
+
+	curl_close($ch);
+
+	echo $response;
+
+
+
+
+?>
