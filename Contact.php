@@ -264,7 +264,7 @@ $email->addContent("text/plain", $message);
 </div>
 </div>"
  );
-$sendgrid = new \SendGrid(getenv($API_KEY);
+$sendgrid = new \SendGrid(getenv($API_KEY));
 
 if($sendgrid->send($email));
 {
