@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <title> PortFolio BTS SIO SLAM | MANUEL Gerald </title>
 
 <head>
@@ -106,21 +106,26 @@
                     
 
             <div class="container-contact100">
-              
+              <div class="alert">Votre message à été envoyer</div>
 
-                <div class="wrap-contact100">
-                    <form class="contact100-form validate-form"  method="POST" action="mm.php">
+
+                <div class="wrap-contact100" >
+
+
+                    <!-- form class="contact100-form validate-form"  method="POST" action="contact.js"  id="contactForm" -->
+                                        <form class="contact100-form validate-form" id="contactForm">
+
                         <span class="contact100-form-title">
                             Envoier votre message ici ! 
                         </span>
 
-                        <label class="label-input100" for="first-name">Ecrirez votre Nom et Prenom* </label>
+                        <label class="label-input100" for="firstname">Ecrirez votre Nom et Prenom* </label>
                         <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-                            <input id="first-name" class="input100" type="text" name="first-name"  placeholder="Nom" required>
+                            <input id="firstname" class="input100" type="text" name="firstname"  placeholder="Nom" required>
                             <span class="focus-input100"></span>
                         </div>
                         <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-                            <input class="input100" type="text" name="last-name" placeholder="Prénom" required>
+                            <input id="lastname" class="input100" type="text" name="lastname" placeholder="Prénom" required>
                             <span class="focus-input100"></span>
                         </div>
 
@@ -143,7 +148,7 @@
                         </div>
 
                         <div class="container-contact100-form-btn">
-                            <button class="contact100-form-btn">
+                            <button class="contact100-form-btn" type="submit">
                                 Envoyer votre message
                             </button>
                         </div>
@@ -239,8 +244,9 @@
               gtag('config', 'UA-23581568-13');
             </script>
 
-            
-
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+<script src="main.js"></script>
 
             
                   

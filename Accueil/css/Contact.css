@@ -70,6 +70,8 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+
+
 .logo{
     line-height: 100px;
     float: left;
@@ -372,3 +374,46 @@ h4 {
     margin: 0px;
     background: rgb(51, 51, 51);
 }
+
+.alert{
+    text-align: center;
+    padding:10px;
+    max-width: 100%;
+    width: 100%;
+    background:#79c879;
+    color:#fff;
+    margin-bottom:10px;
+    display:none;
+  }
+  
+  .contact-form button {
+    font-size: 19px;
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    padding: 12px 20px;
+    background-color: #22b352;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-bottom: 3px solid #1a883f;
+  }
+  
+  .contact-form button:hover {
+    background-color: #1a883f;
+    border-bottom: 3px solid #22b352;
+  }
+  
+  @media all and (min-width: 1000px) {
+    .contact-form {
+      width: 40%;
+    }
+  }
+  
+  @media all and (min-width: 1080px) {
+    .contact-form {
+      width: 30%;
+    }
+  }
+  
