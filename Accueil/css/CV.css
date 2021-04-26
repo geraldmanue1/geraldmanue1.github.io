@@ -988,3 +988,28 @@ a.nounderline:link
     margin: 0px;
     background: rgb(51, 51, 51);
 }
+.competences a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  .competences a:link {
+    color: blue;
+    
+  }
+  
+  .competences a:visited {
+    color: purple;
+    
+  }
+  
+  .competences a:focus, .competences a:hover {
+    border-bottom: 1px solid;
+  
+  }
+  
+  .competences a:active {
+    color: red;
+  }
+  
