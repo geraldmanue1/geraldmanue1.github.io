@@ -176,3 +176,7 @@ p {
     font-weight: 400;
     color: #777;
 }
+
+ .card-text {
+    color: black
+  }

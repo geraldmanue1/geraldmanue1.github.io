@@ -471,3 +471,7 @@ element.style {
     margin: 0px;
     background: rgb(51, 51, 51);
 }
+
+ .card-text {
+    color: black
+  }
