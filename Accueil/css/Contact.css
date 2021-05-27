@@ -377,12 +377,12 @@ h4 {
 
 .alert{
     text-align: center;
-    padding:100px;
+    padding:10px;
     max-width: 100%;
     width: 100%;
     background:#79c879;
     color:#fff;
-    margin-bottom:100px;
+    margin-bottom:10px;
     display:none;
   }
   
