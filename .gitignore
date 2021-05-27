@@ -3,5 +3,3 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-sendgrid.env
-sendgrid.env
