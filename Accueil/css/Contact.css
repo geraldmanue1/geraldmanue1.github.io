@@ -377,17 +377,17 @@ h4 {
 
 .alert{
     text-align: center;
-    padding:10px;
+    padding:100px;
     max-width: 100%;
     width: 100%;
     background:#79c879;
     color:#fff;
-    margin-bottom:10px;
+    margin-bottom:100px;
     display:none;
   }
   
   .contact-form button {
-    font-size: 89px;
+    font-size: 19px;
     width: 100%;
     margin-top: 25px;
     border: none;
