@@ -1,22 +1,27 @@
+<?php
+require 'vendor/autoload.php'; // If you're using Composer (recommended)
+// Comment out the above line if not using Composer
+// require("<PATH TO>/sendgrid-php.php");
+// If not using Composer, uncomment the above line and
+// download sendgrid-php.zip from the latest release here,
+// replacing <PATH TO> with the path to the sendgrid-php.php file,
+// which is included in the download:
+// https://github.com/sendgrid/sendgrid-php/releases
 
-    <?php
-    if(isset($_POST['message'])){
-        $entete  = 'MIME-Version: 1.0' . "\r\n";
-        $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        $entete .= 'From: ' . $_POST['email'] . "\r\n";
-
-        $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
-        <p><b>Nom : </b>' . $_POST['first-name'] . '<br>
-        <p><b>Prenom : </b>' . $_POST['last-name'] . '<br>
-        <b>Email : </b>' . $_POST['email'] . '<br>
-        <b>Télephone: </b>' . $_POST['phone'] . '<br>
-
-        <b>Message : </b>' . $_POST['message'] . '</p>';
-
-        $retour = mail('gerald.manuel.e@gmail.com', 'Envoi depuis page Contact', $message, $entete);
-        if($retour) {
-            echo '<p>Votre message a bien été envoyé.</p>';
-        }
-    }
-    ?>
-
+$email = new \SendGrid\Mail\Mail(); 
+$email->setFrom("gerldmanuel96@gmail.com", "Example User");
+$email->setSubject("Sending with SendGrid is Fun");
+$email->addTo("gerldmanuel96@gmail.com", "Example User");
+$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+$email->addContent(
+    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+);
+$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: '. $e->getMessage() ."\n";
+}

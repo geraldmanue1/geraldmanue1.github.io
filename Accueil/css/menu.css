@@ -63,6 +63,12 @@ body {
 
   }
 
+.menu button a i{
+        color: rgba(255, 255, 255, 0.6); /* coleur rouge </> */
+              animation: clair 0s infinite; /* animation 1 s infini </> */
+
+
+}
 
 
   @keyframes clair{ /* animation </>  regler */
@@ -170,3 +176,7 @@ p {
     font-weight: 400;
     color: #777;
 }
+
+ .card-text {
+    color: black
+  }

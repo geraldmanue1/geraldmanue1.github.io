@@ -4,19 +4,56 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet' href='Accueil/css/menu.css'>  
 
-        <link rel='stylesheet' href='Accueil/css/PPE.css'>  
-                <link rel='stylesheet' href='Accueil/css/icon.css'>  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+  crossorigin="anonymous">
+
+
+  <!-- css fontawesome -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- js fontwesome -->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <!-- CSS Devicon -->
+  <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+  rel="stylesheet">
+
+  <!-- Custom styles -->
+
+  <link rel="stylesheet" type="text/css" href="Accueil/scss/CV.scss">
+  <link rel="stylesheet" type="text/css" href="Accueil/css/devicon.min.css">
+  <link rel="stylesheet" type="text/css" href="Accueil/scss/grid.scss">
 
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- script www 3 school -->
- <script src='Accueil/js/menu.js'></script> 
- <script src='Accueil/js/Contact.js'></script> 
+
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='Accueil/css/menu.css'>  
+
+  <link rel='stylesheet' href='Accueil/css/CV.css'>  
+  <link rel='stylesheet' href='Accueil/css/PPE.css'>  
+  <link rel='stylesheet' href='Accueil/css/icon.css'>  
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- script www 3 school -->
+  <script src='Accueil/js/menu.js'></script> 
+  <script src='Accueil/js/CV.js'></script> 
   <link rel="icon" type="image/png" href="ContactForm/images/icons/Nelson.png"/>
+  <link rel="stylesheet" type="text/css" href="ContactForm/css/main.css">
+ 
+
 
 
 
@@ -24,49 +61,71 @@
 <body>
 
 <div class="menu" id="myMenu">
-  <a  class="active"><i class="fas fa-code"></i> MANUEL Gerald <i class="fa fa-code"></i></a>
-      <a href="menu.html">Accueil</a>
+  <a  class="active"><i class="fa fa-code"></i> MANUEL Gerald <i class="fa fa-code"></i></a>
+      <a href="index.html">Accueil</a>
 
     <!-- <a href="CV.html">CV</a> -->
      <a href="CV.html">Compétence</a> <!-- competence bts final, cv, lettre motivation un clic télécharge -->
    <!-- <a href="SIO1A.html">BTS SIO 1ère Années</a> -->
-    <a href="PPE.html">Projet PPE</a> <!-- projet l'année dernière et aujhourd'hui -->
-    <!--
-     
-       <div  class="dropdown1">
-         <button onclick="#Veille"  class="dropbtn1">Veille 
 
+       <div  class="dropdown1">
+        <button>
+       <a  href="PPE.html"  class="dropbtn1">Projet PPE
   
-      <i class="fa fa-caret-down"></i>
+      <i class="fa fa-caret-down"></i></a>
     </button>
     <div class="dropdown1-content">
-      <a href="Technologie.html">Veille Technologie</a>
-      <a href="Juridique.html">Veille Juridique</a>
+       <a href="Application-Mobile.html">Application GestSIO</a>
+
+    </div>
+
+  </div> 
+     
+      <div  class="dropdown1">
+        <button>
+       <a  href="#Stage.html"  class="dropbtn1">Stages
+  
+      <i class="fa fa-caret-down"></i></a>
+    </button>
+    <div class="dropdown1-content">
+       <a href="#Stage1.html">Stage 1ère années</a>
+      <a href="#Stage2.html">Stage 2ème années</a>
     </div>
   </div> 
--->
+       <div  class="dropdown1">
+        <button>
+       <a  href="Veille.html"  class="dropbtn1">Veille 
+  
+      <i class="fa fa-caret-down"></i></a>
+    </button>
+    <div class="dropdown1-content">
+       <a href="Veille-tech.html">Veille Technologie</a>
+      <a href="#Veille-Jur.html">Veille Juridique</a>
+    </div>
+  </div> 
+
   <a href="Contact.html">Contact</a> <!-- Nom, Prenom, Adresse, Email, commentaire -->
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 <div class="jumbotron jumbotron-fluid">
 
-            <div class="container message">
-              <!--
+            <div class="container messag">
+              
 
-                <h1 class="presentation" class="barre">Projets Personnels Encadrés </h1><span class="barre"> | </span> 
-              -->
+
+                <h1 class="presentation" class="barre">Projets Personnels Encadrés (PPE)</h1><span class="barre"> | </span> 
+              
 
             </div>
 
         </div>
-    
-              <h2 class="display-4 titre_section">Projets Personnels Encadrés (PPE)</h2>
+    <h2 class="display-4 titre_section">Présentation de PPE</h2>
                 </div>
 
                 <div class="col-12">
                     <div class="card card_presentation_bts">
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: left; ">
 
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 texte_presentation">
                               
@@ -74,41 +133,24 @@
 
 <!-- Demo of material design box shadows based on https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d -->
 
-<div class="center">
-<div class="card1 card-1"> 
+                               <p class="card-text" style="color: black; text-align:left"><b>Qu'est-ce qu'un PPE ?</b></p><br>
 
-<div class="PPE1">
+    
+                                <p class="card-text" style= "color: black;  text-align:left">Un PPE (Projet personnalisé encadré) est un projet informatique qui peut être réalisé seul ou par groupe de 2 ou 3 personnes. Ces PPEs à dominante informatique à la spécialité de l’étudiant permettent de se conforter à un type de situation d’entreprise et d’appliquer certaines connaissances de cours dans ce PPE ou encore d’en chercher par l’étudiant lui-même qui peut être une plus-value pour l’étudiant et ses connaissances.</p> <br>
 
-PPE 1 :
-</div>
-<div class="MDL">
-</div>
-</div>
+                                <br>
+                                   <p class="card-text" style= " color: black;  text-align:left">A partir du second semestre et selon la spécialité du candidat, en spécialité SLAM, sur les 3 PPEs faits durant les 3 semestres (1 semestre = 1 PPE), il y a seulement 1 situation de PPE peuvent être présenté à l’examen. Il se peut cependant que des PPEs soient des reprises de situation d’entreprise fait par l’étudiant pendant son stage. </p><br><br>
 
-<div class="card1 card-2">
+                                   <p class="card-text" style= " color: black; text-align:left">Pour ma part, sur les 3 PPEs réalisés pendant les 3 semestres, j’ai présenté le dernier PPE de fait au cours de ma deuxième année de BTS SIO.</p><br><br>
 
-<div class="PPE2">
-
-PPE 2 :
-</div></div>
-
-<div class="card1 card-3">
-
-<div class="PPE3">
-PPE 3 :
-</div></div>
-<div class="card1 card-4">
-
-<div class="PPE4">
-PPE 4 :
-</div></div>
-</div>
-
-
-                     </div>
-                   </div>
-                 </div>
-               </div>
+                                 <p class="card-text" style= " color: black;  text-align:left; "><b>Les PPE que je réalisais au cours de ce semestre sont :</p><br> </b>        
+                                 
+                                 <p class="card-text" style= "color: black; padding-left: 20px" > - <a href="Application-Mobile.html" style="color: blue; font-size:18px; " ><b> Adaptation d'une application mobile (GestSIO)</b></a></p><br><br>                         
+             </div>
+           </div>
+         </div>
+       </div>
+    
 
 
 </body>
