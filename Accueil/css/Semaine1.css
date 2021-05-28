@@ -1,0 +1,92 @@
+
+
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+ /* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ /* Handle */
+body::-webkit-scrollbar-thumb {
+     background: blue; 
+   background: #888; 
+} 
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+
+    box-sizing: border-box;
+
+}
+
+a:not([href]):not([tabindex]) {
+    color: white; 
+    text-decoration: none;
+}
+.navbar{
+    height: 5rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Saira Stencil One', cursive;
+    transition: 0.4s;
+    font-size: 125%;
+
+}
+
+.navbar h2{
+    font-size: 115%;
+}
+
+#navbarNav li{
+    padding: 0 10%;
+}
+
+
+
+.titre1S1 {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+.titre2S1 {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+.titre3S1  {
+
+padding-top: 30px;
+}
+
+.accueil h2 {
+     padding-left:  30px;
+}
+
+.paragrapheS1 {
+padding-left:  30px;
+
+}
+
+.paragrapheS11 {
+padding-left:  60px;
+position: absolute;
+bottom: -38px;
+
+}
+.ObjectifS1 {
+padding-left:  30px;
+
+}

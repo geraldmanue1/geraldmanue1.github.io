@@ -432,17 +432,17 @@ h4 {
   }
   
   .collapsible:after {
-    content: '\002B';
+    /*content: '\002B';*/
     color: #333;
     font-weight: bold;
     float: right;
     margin-left: 5px;
   }
   
-  .active:after {
+  /*.active:after {
      content: "\2212"; 
      color: #333;
-  }
+  } */
   
   .content {
     padding: 0 18px;
@@ -471,7 +471,4 @@ h4 {
     
    /* border-bottom: 1px solid rgba(0,0,0,.125);*/
   }
-  
-  
- 
   
