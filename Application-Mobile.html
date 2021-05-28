@@ -84,12 +84,14 @@
         <button>
        <a  href="#Stage.html"  class="dropbtn1">Stages
   
-      <i class="fa fa-caret-down"></i></a>
+     <!-- <i class="fa fa-caret-down"></i>--></a> 
     </button>
+    <!--
     <div class="dropdown1-content">
-        <a href="#Stage1.html">Stage 1ère années</a>
+       <a href="#Stage1.html">Stage 1ère années</a>
       <a href="#Stage2.html">Stage 2ème années</a>
-    </div>
+    
+    </div>-->
   </div> 
        <div  class="dropdown1">
         <button>
@@ -130,35 +132,72 @@
 
 <!-- Demo of material design box shadows based on https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d -->
 
-                               <p class="card-text" style="color: black; text-align:left"><u><b>Présentation Applicaton mobile</b></u> : </p><br>
 
-    
-                                <p class="card-text" style= "text-align:left">Cette situation a été réalisée dans le cadre de PPE. Le contexte M2L est la Maison des ligues de lorraine, cette ligue a mis en place une application Android qui a pour but de gérer appréciation. Monsieur Sapin, souhaiterait également que vous adaptiez une ébauche d’application Android réalisée par un ancien stagiaire</p> 
+                          
+                                <h1 class="collapsible1"><b>Présentation Applicaton mobile</b></h1>
 
-                                <br>
-                                   <p class="card-text" style= "text-align:left">L’application permet au responsable de consulter la liste des étudiants, de modifier un étudiant ou de le supprimer. </p><br>
+      
+                                <p class="card-text" style= "text-align:left">Cette situation a été réalisée dans le cadre de PPE. Le contexte M2L est la Maison des ligues de lorraine, cette ligue a mis en place une application Android qui a pour but de gérer appréciation. Monsieur Sapin, souhaiterait également que vous adaptiez une ébauche d’application Android réalisée par un ancien stagiaire </p>
 
-                                   <p class="card-text" style= "text-align:left">Le projet doit aussi récupérer l’appréciation de chaque étudiant avec leur ID dans la base de données à distance pour que dans l’application android chaque étudiant affiche son appréciation lors ajout.</p><br><br>
+                      
+                                   <p class="card-text" style= "text-align:left">L’application permet au responsable de consulter la liste des étudiants, de modifier un étudiant ou de le supprimer. </p>
 
-                                  <p class="card-text" style="color: black; text-align:left"><u><b>Description des travaux réalisés</b></u> : </p><br>
+                                   <p class="card-text" style= "text-align:left">Le projet doit aussi récupérer l’appréciation de chaque étudiant avec leur ID dans la base de données à distance pour que dans l’application android chaque étudiant affiche son appréciation lors ajout.</p>
+                                  
 
-                                  <p class="card-text" style= "text-align:left">J’ai utilisé le language php avec mes équipes pour récupérer les données d’un étudiant dans la base de données au format JSON, en Android, avec la bibliothèque Retrofit V2, sous le language Java.</p><br>
-                                   <p class="card-text" style= "text-align:left">Les étapes pour récupère les IDS vers l’application mobile à distance sont :</p><br>
+                               
+                                  <button class="collapsible"><b>Description des travaux réalisés</b></button>
+                                  <div class="content" style="padding-bottom:5px">
+
+                                 <p></p><p class="card-text" style= "text-align:left">J’ai utilisé le language php avec mes équipes pour récupérer les données d’un étudiant dans la base de données au format JSON, en Android, avec la bibliothèque Retrofit V2, sous le language Java.</p>
+                                   <p class="card-text" style= "text-align:left">Les étapes pour récupère les IDS vers l’application mobile à distance sont :</p>
 
                                    <div class="car">
 
-                                    <p class="card-text"  style="color: black;" >- Importer Retrofit dans le projet Android</p><br>
-                                    <p class="card-text"  style="color: black;" >- Créer la classe Appreciation sur Java représentant les données (à récupérer du seveur)</p><br>                 
-                                    <p class="card-text"  style="color: black;" >- Créer l’interface InterAppreciation sur Java représentant l’API du serveur</p><br>     
-                                    <p class="card-text"  style="color: black;" >- Créer l’instance du client Retrofit (en version 2)</p><br>
-                                    <p class="card-text"  style="color: black;" >- Créer l’instance du service d’API</p><br>
-                                    <p class="card-text"  style="color: black;" >- Créer la requête GET</p><br>
-                                    <p class="card-text"  style="color: black;" >- Exécuter la requête GET</p><br>
-                                    <p class="card-text"  style="color: black;" >- Récupérer le résultat de la requête</p><br><br>
-                                   
-
+                                    <p class="card-text"  style="color: black;" >- Importer Retrofit dans le projet Android</p>
+                                    <p class="card-text"  style="color: black;" >- Créer la classe Appreciation sur Java représentant les données (à récupérer du seveur)</p>              
+                                    <p class="card-text"  style="color: black;" >- Créer l’interface InterAppreciation sur Java représentant l’API du serveur</p>  
+                                    <p class="card-text"  style="color: black;" >- Créer l’instance du client Retrofit (en version 2)</p>
+                                    <p class="card-text"  style="color: black;" >- Créer l’instance du service d’API</p>
+                                    <p class="card-text"  style="color: black;" >- Créer la requête GET</p>
+                                    <p class="card-text"  style="color: black;" >- Exécuter la requête GET</p>
+                                    <p class="card-text"  style="color: black;" >- Récupérer le résultat de la requête</p>
                                   </div>
-                                    <p class="card-text"  style="color: black;" >Tous les documentations :</p>
+                                    </p>
+                                  </div>
+                                  <button class="collapsible"><b>Compétences mises en œuvre</b></button>
+                                  <div class="content" style="padding-bottom:5px">
+                                        
+                                    <p></p><p class="card-text" style= "text-align:left"> A1.1.1 : Analyse du cahier des charges d'un service à produire
+                                        A1.1.3 : Étude des exigences liées à la qualité attendue d'un service
+                                        A1.2.2 : Rédaction des spécifications techniques de la solution retenue
+                                        A1.2.4 : Détermination des tests nécessaires à la validation d'un service
+                                        A1.3.1 : Test d'intégration et d'acceptation d'un service
+                                        A1.3.4 : Déploiement d'un service
+                                        A1.4.1 : Participation à un projet
+                                        A1.4.3 : Gestion des ressources
+                                        A3.2.2 : Remplacement ou mise à jour d'éléments défectueux ou obsolètes
+                                        A4.1.2 : Conception ou adaptation de l’interface utilisateur d’une solution applicative
+                                        A4.1.3 Conception ou adaptation d’une base de données
+                                        A4.1.6 : Gestion d'environnements de développement et de test
+                                        A4.1.7 : Développement utilisation ou adaptation de composants logiciels
+                                        A4.1.8 : Réalisation des tests nécessaires à la validation d'éléments adaptés ou développés
+                                        A4.1.9 : Rédaction d'une documentation technique 
+                                        A4.1.10 : Rédaction d'une documentation d'utilisation 
+                                        A4.2.1 : Analyse et correction d'un dysfonctionnement, d'un problème de qualité de …
+                                        A4.2.2 : Adaptation d'une solution applicative aux évolutions de ses composants
+                                        A4.2.4 : Mise à jour d'une documentation technique
+                                        A5.2.1 : Exploitation des référentiels, normes et standards adoptés par le prestataire
+                                        A5.2.2 : Veille technologique
+                                        A5.2.3 : Repérage des compléments de formation ou d'auto-formation ...
+                                        A5.2.4 : Étude d’une technologie, d'un composant, d'un outil ou d'une méthod
+
+                                  
+                                    </div>
+                                  <br>
+                                  <p class="card-text"  style="color: black;" >Tous les documentations :</p>
+
+                                  <p>
                                     <div class="row">
 
                                    
@@ -201,6 +240,8 @@
                                                 <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
                                                     <h6 style="text-align:left;">  <a  class="btn btn-xl " href="pdf/PPE/guide_d'utilisation.pdf" target="_blank"  Style="text-decoration:none; color:blue" >  <i class="fa fa-download mr-2" ></i> Documentation Utilisateur</h6></a>
                                                   </h6>  
+                                                  <script src='Accueil/js/PPE.js'></script> 
+</div>
                                                 
                                               </div> </div>
 </div></div></div></div></div>
