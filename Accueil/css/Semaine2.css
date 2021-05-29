@@ -171,12 +171,7 @@ $thumb-background: rgba(31, 163, 191, 0.05);
   @media (max-width: 767.98px) {
    width: calc(100% /#{$thumb-by-row-phone});
  }
- &::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-  background-color: $thumb-background;
-}
+
 .square-content {
   position: absolute;
   top: 0;
@@ -410,6 +405,7 @@ img {
   flex: 50%;
 }
 
+/*
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
   .flex-container {
@@ -427,7 +423,7 @@ img {
   .flex-item-right:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  /* fin descend bas fenetre */
+
 
   .tirer {
 

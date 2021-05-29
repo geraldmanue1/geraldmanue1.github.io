@@ -69,6 +69,7 @@
 
 
 
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel='stylesheet' href='Accueil/css/PPE.css'>  
@@ -76,9 +77,12 @@
   <link rel='stylesheet' href='Accueil/css/Stage.css'>  
   <link rel='stylesheet' href='Accueil/css/menu.css'>  
   <link rel='stylesheet' href='Accueil/css/CV.css'>  
+ 
+
+  <link rel='stylesheet' href='Accueil/css/Semaine2.css'>  
 
 
-
+  <link rel='stylesheet' href='Accueil/css/Semaine3.css'>  
 
 
 
@@ -265,7 +269,7 @@
                                     </div>
         
         <button class="collapsible"><b>Quelque Compte rendu de la Semaine</b></button>
-                                    <div class="content" style="padding-bottom:5px">
+                                    <div class="content" style="padding-bottom:5px; max-height: 652px;">
                                         <br>
                                         
         <div class="container" >
@@ -376,13 +380,13 @@
          
          <p class="paragrapheS2" style="color:black;"> Dans la partie <b>Général</b> :
            
-           <p class="tirer">
+           <p class="tirer" style="color:black">
          - Noeud : pve</p>
          
-          <p class="tirer"> - VM ID : 327 </p>
+          <p class="tirer" style="color:black"> - VM ID : 327 </p>
          
-           <p class="tirer"> - Nom : Stage-MandelaShop </p>
-          <p class="tirer"> - Pool de ressource : E3 </p>
+           <p class="tirer" style="color:black"> - Nom : Stage-MandelaShop </p>
+          <p class="tirer" style="color:black"> - Pool de ressource : E3 </p>
          
          <p class="paragrapheS2" style="color:black;">  Puis, cliquez suivant pour passe dans un autre onglet et de même par la suite. </p>
          </div>
@@ -403,10 +407,10 @@
                <div class="myModal2" style = "margin: 5px 5px 5px 5px;
              padding-top: 40px;"> <p class="paragrapheS2" style="color:black;"> Puis, dans l'onglet <b>OS</b> en cliquant sur Utiliser une image de disque (ISO) pour créer une nouvelle image ISO, Stockage, le type et version. </p>
          
-         <p class="tirer"> - Nom Stockage isos-sio4 </p>
-         <p class="tirer">  - L’Image ISO quand à importer dans la page précédent (page 9) : debian-10.1.0-amd64-netinst.iso </p>
-          <p class="tirer"> - Type : Linux c’est un système d’exploitation </p>
-         <p class="tirer">  - Version de linux : 5x-2.6 Kernel </p>
+         <p class="tirer" style="color:black"> - Nom Stockage isos-sio4 </p>
+         <p class="tirer" style="color:black">  - L’Image ISO quand à importer dans la page précédent (page 9) : debian-10.1.0-amd64-netinst.iso </p>
+          <p class="tirer" style="color:black"> - Type : Linux c’est un système d’exploitation </p>
+         <p class="tirer" style="color:black">  - Version de linux : 5x-2.6 Kernel </p>
          
          
          
@@ -625,9 +629,9 @@
                 <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
               <div class="myModal3">  <p class="paragrapheS2" style="color:black;"> Ensuite, donnez un mot de passe à l'utilisateur <b>root (super utilisateur de la machine)</b> :
         
-                <p class="tirer"> - Je mets pour l’instant le mot de passe <b>naibed01</b> pour utilisateur <b>root</b> et vous pouvez changer mettre le mot de passe comme vous voulez.</p>
+                <p class="tirer" style="color:black"> - Je mets pour l’instant le mot de passe <b>naibed01</b> pour utilisateur <b>root</b> et vous pouvez changer mettre le mot de passe comme vous voulez.</p>
         
-         <p class="tirer"> - Et si vous avez à peur pour une erreur, vous pouvez cocher sur <b>Afficher le mot de passe en clair</b> :</p>
+         <p class="tirer" style="color:black"> - Et si vous avez à peur pour une erreur, vous pouvez cocher sur <b>Afficher le mot de passe en clair</b> :</p>
                 <p class="paragrapheS2" style="color:black;"> Par la suite, <b>Continuer</b>. </p></div>
          </div>
             </div></div></div></div>
@@ -835,7 +839,7 @@
                 <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
               <div class="myModal3"> <p class="paragrapheS2" style="color:black;"> Attente le chargement Apt pour mettre à jour sa base de données de paquets : </p>
         
-         <p class="tirer"> Après pour aller page suivant cliquez <b>Oui</b>.</p> </div>
+         <p class="tirer" style="color:black"> Après pour aller page suivant cliquez <b>Oui</b>.</p> </div>
          </div>
             </div></div></div></div>
         
@@ -966,60 +970,397 @@
       </div>
       <div id="menu2" class="tab-pane fade collapsible2" style="padding-top:20px">
         <p></p>
-        <h3 style="color: black; padding-left:10px;"> Menu 2</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-      </div>
-      <div id="menu3" class="tab-pane fade collapsible2" style="padding-top:20px">
-        <p></p>
-        <h3 style="color: black; padding-left:10px;">Menu 3</h3>
-        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-      </div>
-            
+        <h4 class="card-text" style="color: black; padding-left:10px; padding-bottom:0px"><b>Semaine 3 :</b></h4> <br>
+        <p style="color: black; padding-left:10px;"><b>Objectif :</b></p>
+        <p style="color: black; padding-left:10px;">Dans le troisième semaine on a fait un schémas DMZ pour comprendre l'archetucture de réseau. On a change les IPS sur le commande dans le dossier <b>/etc/network/interfaces</b>. On a configure pfsense pour le réseau à distance. On a remplie quelque document pour l'avancement de projet et en réflechir.</p>
 
+
+
+        <p class="ObjectifS3">  </p>
+        <div class ="flex-container">
+        
+        <div><p class="paragrapheS2" style="color:black;" > Schémas DMZ : </p></div>
+        
+        
+        <div class="row " style="padding-bottom:80px; padding-top:40px; padding-right: 60px; padding-left: 20px;">
+        <div class="column flex-item-left" >
+        <img src="image/Stage/Shema_reseau.png" style="width:100%;  height: 100%;" onclick="openModal7();currentSlide7(1)" class="hover-shadow cursor">
+        </div>
+        
+        </div>
+        <!--onclick="this.style.display='none'"> -->
+        <div id="myModal7" class="modal">
+        <span class="close cursor" onclick="closeModal7()">&times;</span>
+        <div class="modal-content" >
+        
+        <div class="mySlides7">
+        <div class="numbertext">1 / 1</div>
+        <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+        <div class="myModal7" style = "margin: 5px 5px 5px 5px;
+        padding-top: 40px;">
+        
+        <div><p class="paragrapheS2" style="color:black;" > Voci le schémas DMZ : </p></div>
+        
+        
+        <script src='Accueil/js/Semaine3.js'></script> 
+        
+        </div>
+        </div>
+        <img src="image/Stage/Shema_reseau.png" style="width:100%" >
+        
+        </div>
+        </div>    
+        </div>
+        </div></div></div>
+        <!-- image 8 -->
+
+    <!--  <p class="paragrapheS2" style="color:black;" style="padding-top: 30px"> Configurer Debian : </p> -->
+
+    <div><p class="paragrapheS2" style="color:black;" > Configuration pfsense et adresse ip : </p></div>
+
+    <div class="row" style="padding-bottom:80px; padding-top:40px; padding-right: 60px; padding-left: 20px;">
+      <div class="column flex-item-right" >
+        <img src="image/Stage/change_IP/1-ip_add.png" style="width:100%;  height: 100%;" onclick="openModal8();currentSlide8(1)" class="hover-shadow cursor">
+      </div>
+    
     </div>
-    <br>
-</div>
+    
+    <div id="myModal8" class="modal">
+      <span class="close cursor" onclick="closeModal8()">&times;</span>
+      <div class="modal-content" >
+    
+        <div class="mySlides8">
+          <div class="numbertext">1 / 19</div>
+          <img src="image/Stage/change_IP/1-ip_add.png" style="width:100%;" >
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px; ">
+          <div class="myModal8" style="color:black;">
+            <p class="paragrapheS2" style="color:black"> Au début en doit vérifier adresse IP avec la commande :<pre class="code"><b>ip add</b> </pre></p>
+          </div>
+     </div>
+         
+        </div>
+    </div></div></div>
+        <div class="mySlides8">
+          <div class="numbertext">2 / 19</div>
+          <img src="image/Stage/Serveur/2.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"><p class="paragrapheS2" style="color:black;">Choisissez votre langue comme vous voulez ci-dessus(en haut).</p></div>
+     </div>
+        </div>
+    </div></div></div>
+        <div class="mySlides8">
+          <div class="numbertext">3 / 19</div>
+          <img src="image/Stage/Serveur/3.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"><p class="paragrapheS2" style="color:black;">Ensuite, choisissez votre emplacement et sélectionnez la disposition du clavier. Les écrans suivants seront différents selon vos choix. </p> <p class="paragrapheS2" style="color:black;"> Sélectionnez simplement le pays et la disposition de clavier qui vous conviennent car ils définissent la langue que votre système Debian utilisera sur le shell et la disposition de clavier utilisée.</p></div>
+     </div>
+        </div></div></div></div>
+        
+        <div class="mySlides8">
+          <div class="numbertext">4 / 19</div>
+          <img src="image/Stage/Serveur/4.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8">Quand à fini le chargement. </p>
+    
+    <p class="paragrapheS2" style="color:black;"> Entrez votre nom de machine que vous voulez sur le screen ci-dessus.</p></div>
+     </div>
+        </div></div></div></div>
+    
+          <div class="mySlides8">
+          <div class="numbertext">5 / 19</div>
+          <img src="image/Stage/Serveur/5.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8">  <p class="paragrapheS2" style="color:black;"> Quand à fini le chargement. Entrez votre nom de machine que vous voulez ci-dessus </p>
+            <p class="paragrapheS2" style="color:black;">  Puis, <b>Continuer</b>. </p> </div>
+     </div>
+        </div></div></div></div>
+    
+    
+          <div class="mySlides8">
+          <div class="numbertext">6 / 19</div>
+          <img src="image/Stage/Serveur/6.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;"> Lire l’instruction : <b>Configurer le réseau</b> ci-dessus et <b>Continuer</b>.</p> </div>
+     </div>
+        </div></div></div></div>
+    
+          <div class="mySlides8">
+          <div class="numbertext">7 / 19</div>
+          <img src="image/Stage/Serveur/7.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8">  <p class="paragrapheS2" style="color:black;"> Ensuite, donnez un mot de passe à l'utilisateur <b>root (super utilisateur de la machine)</b> :
+    
+            <p class="tirer" style="color:black"> - Je mets pour l’instant le mot de passe <b>naibed01</b> pour utilisateur <b>root</b> et vous pouvez changer mettre le mot de passe comme vous voulez.</p>
+    
+     <p class="tirer" style="color:black"> - Et si vous avez à peur pour une erreur, vous pouvez cocher sur <b>Afficher le mot de passe en clair</b> :</p>
+            <p class="paragrapheS2" style="color:black;"> Par la suite, <b>Continuer</b>. </p></div>
+     </div>
+        </div></div></div></div>
+    
+          <div class="mySlides8">
+          <div class="numbertext">8 / 19</div>
+          <img src="image/Stage/Serveur/8.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Confirmation du même mot de passe et <b>Continuer</b>.</p> </div>
+     </div>
+        </div></div></div></div>
+    
+          <div class="mySlides8">
+          <div class="numbertext">9 / 19</div>
+          <img src="image/Stage/Serveur/9.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Par la suite choisissez votre <b>nom utilisateur</b> pour vous connecter à votre machine debian et <b>Continuer</b>.</p> </div>
+     </div>
+        </div></div></div></div>
+    
+          <div class="mySlides8">
+          <div class="numbertext">10 / 19</div>
+          <img src="image/Stage/Serveur/10.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Lire l’instruction ci-dessus.</p> <p class="paragrapheS2" style="color:black;"> <b>Créer les utilisateurs</b> et <b>choisir les mots de passe</b> ci-dessus et <b>Continuer</b>.</p></div>
+     </div>
+        </div>
+    </div></div></div>
+         <div class="mySlides8">
+          <div class="numbertext">11 / 19</div>
+          <img src="image/Stage/Serveur/11.png" style="width:100%;" >
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">
+            Par la suite, choisissez votre <b>mot de passe pour se connecter à votre machine</b> debian et <b>Continuer</b>.</p> </div>
+     </div>
+        </div>
+    </div></div></div>
+         <div class="mySlides8">
+          <div class="numbertext">12 / 19</div>
+          <img src="image/Stage/Serveur/12.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Ensuite, confirmation du même <b>mot de passe</b> et <b>Continuer</b>.</p> </div>
+     </div>
+        </div>
+    </div></div></div>
+         <div class="mySlides8">
+          <div class="numbertext">13 / 19</div>
+          <img src="image/Stage/Serveur/13.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Vous devez maintenant partitionner votre disque dur. Par souci de simplicité, je sélectionne Guidé - utiliser le disque entier  - cela créera une grande partition pour le système de fichiers <b>/</b> et une autre pour le swap (bien sûr, le partitionnement dépend entièrement de vous - si vous savez ce que vous faites, vous peut également configurer vos partitions manuellement). Pour les systèmes d'hébergement comme les didacticiels de serveur parfait ISPConfig 3, vous pouvez choisir par exemple 60 Go pour <b>/</b> et une grande partition <b>/var</b> car toutes les données 
+            de site Web et de courrier électronique sont stockées dans les sous-répertoires de <b>/var</b>.<p></div>
+     </div>
+        </div>
+    </div></div></div>
+    
+         <div class="mySlides8">
+          <div class="numbertext">14 / 19</div>
+          <img src="image/Stage/Serveur/14.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Sélectionnez le disque que vous souhaitez partitionner ci-dessus.<p> </div>
+     </div>
+        </div>
+        
+    </div></div></div>
+    
+         <div class="mySlides8">
+          <div class="numbertext">15 / 19</div>
+          <img src="image/Stage/Serveur/15.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Sélectionnez ensuite le schéma de partitionnement. Comme mentionné précédemment, je sélectionne Tous les fichiers dans une partition 
+            (recommandé pour les nouveaux utilisateurs) par souci de simplicité - c'est à votre goût ce que vous choisissez ici donc pour l’instant en choisissent le premier partition. </p></div>
+     </div>
+        </div>
+        </div></div></div>
+    
+    
+         <div class="mySlides8">
+          <div class="numbertext">16 / 19</div>
+          <img src="image/Stage/Serveur/16.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">En a laissé par défaut et n’ a rien modifier.</p>
+    
+            <p class="paragrapheS2" style="color:black;">Le résultat ci-dessus. </p>
+              
+              <p class="paragrapheS2" style="color:black;"> Si vous voulez modifier, vous pouvez changer la partition et ré-ajouter. </p> </div>
+     </div>
+        </div>
+        </div></div></div>
+    
+         <div class="mySlides8">
+          <div class="numbertext">17 / 19</div>
+          <img src="image/Stage/Serveur/18.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Quand on a fini de modifier le partition et choisir <b>Oui</b>.</p>
+    
+       <p class="paragrapheS2" style="color:black;">Pour dire que lorsque vous êtes invité: "Écrivez les modifications sur le disque ?</p> <p class="paragrapheS2" style="color:black;"> Puis, Continuer. </p> </div>
+     </div>
+        </div>
+        </div></div></div>
+    
+        
+    
+           <div class="mySlides8">
+          <div class="numbertext">18 / 19</div>
+          <img src="image/Stage/Serveur/19.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Un petit chargement pour passer la suite.</p>
+              La suite 
+           <p class="paragrapheS2" style="color:black;"> C’est pas important en met <b>Non</b> pour l’instant et passe par la suite.</p>
+    <p class="paragrapheS2" style="color:black;">C’est-à-dire : je vais faire une installation en réseau (tous les packages 
+       d'installation supplémentaires sont téléchargés sur Internet), donc je choisis ici de ne pas analyser de disques d'installation supplémentaires.</p></div>
+     </div>
+        </div>
+    </div></div></div>
+           <div class="mySlides8">
+          <div class="numbertext">19 / 19</div>
+          <img src="image/Stage/Serveur/20.png" style="width:100%;">
+          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+            <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
+               
+                    <div class="modal-body8">
+            <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Par la suite, vous devez configurer apt. Comme nous utilisons le CD Debian Netinstall, qui ne contient qu'un ensemble minimal de paquets, nous devons utiliser un miroir réseau. </p>
+    
+            <p class="paragrapheS2" style="color:black;"> <b>Sélectionnez le pays</b> dans lequel se trouve le miroir réseau que vous souhaitez utiliser (il s'agit généralement du pays dans lequel se trouve votre système serveur).</p> </div>
+     </div>
+        </div>
+    
+    </div></div></div>
+          
+        
+        <a class="prev" onclick="plusSlides8(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides8(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <u id="caption8"></u>
+        </div>
+    
+    
+        
+    
+     <script src='Accueil/js/Semaine3.js'></script> 
+    </div>
+    </div>
+    
      
-  </div>
-                            <script src='Accueil/js/Stage.js'></script> 
 
-                            <br>
-                            <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
-                                <h6 style="color: black; font-size: 18px;"> Voici le convention de stage de première année : <a   href="pdf/Stage/Attestation_MANUEL_Gerald_2eme_annee.pdf"  target="_blank" Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
-                              
-
-
-                              </div>
-                              <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
-                                <h6 style="color: black; font-size: 18px;"> Situation professional pour le site de Mandela Shop: <a   href="pdf/MANUEL_Gerald_Mandela_Shop_SituationPro2.pdf"  target="_blank"  Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
-
-                             
-                             
-
-
-                              </div>
-
-                          
-                            <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
-                              <h6 style="color: black; font-size: 18px;"> Tous les documentations à fournir Mandela Shop : <a   href="#documentation_stage_MandelaShop.html"  Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
-                              
-                             
-
-                            </div>
-                       
-                            <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
-                              <h6 style="color: black; font-size: 18px;"> Site Mandela Shop: <a   href="http://165.169.241.28:31197/MandelaShop/"  target="_blank"  Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
-                              
-                             
-                              <script src='Accueil/js/PPE.js'></script> 
-                             
-                            </div>
-                          </div>
-       </div>
-
-
-    </div></div>
-       </div>
-
-</body>
-</html>
+</div> </div></div>
+    <!-- fin image 8 -->
+            <br>
+        </div>
+             
+          </div>
+                                    <script src='Accueil/js/Stage.js'></script> 
+        
+                                    <br>
+                                    <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
+                                        <h6 style="color: black; font-size: 18px;"> Voici le convention de stage de première année : <a   href="pdf/Stage/Attestation_MANUEL_Gerald_2eme_annee.pdf"  target="_blank" Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
+                                      
+        
+        
+                                      </div>
+                                      <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
+                                        <h6 style="color: black; font-size: 18px;"> Situation professional pour le site de Mandela Shop: <a   href="pdf/MANUEL_Gerald_Mandela_Shop_SituationPro2.pdf"  target="_blank"  Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
+        
+                                     
+                                     
+        
+        
+                                      </div>
+        
+                                  
+                                    <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
+                                      <h6 style="color: black; font-size: 18px;"> Tous les documentations à fournir Mandela Shop : <a   href="#documentation_stage_MandelaShop.html"  Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
+                                      
+                                     
+        
+                                    </div>
+                               
+                                    <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
+                                      <h6 style="color: black; font-size: 18px;"> Site Mandela Shop: <a   href="http://165.169.241.28:31197/MandelaShop/"  target="_blank"  Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
+                                      
+                                     
+                                      <script src='Accueil/js/PPE.js'></script> 
+                                     
+                                    </div>
+                                  </div>
+               </div>
+        
+        
+            </div></div>
+               </div>
+        
+        </body>
+        </html>

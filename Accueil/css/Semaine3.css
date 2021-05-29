@@ -169,23 +169,7 @@ a.next:not([href]):not([tabindex]):hover {
   }
 }
 /* fin brille click*/ 
-/* fin Dézommer */
 
-
-/* Dézoomer */
- div img {
-      cursor:zoom-out;
-
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
-  -webkit-transition: 2.3s ease-in-out;
-  transition: 2.3s ease-in-out;
-}
- div:active img  {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-/* fin Dézommer */
 .image3 {
 
   padding-left:  90px;
@@ -307,6 +291,18 @@ $thumb-background: rgba(31, 163, 191, 0.05);
   background-color: #0000009e;
 }
 
+.modal8{
+    display: block !important;
+}
+.modal-dialog8{
+      overflow-y: initial !important
+}
+.modal-body8{
+  height: 190px;
+  background-color: #29899D;
+  overflow-y: auto;
+}
+
 /* Modal Content */
 .modal-content {
   position: relative;
@@ -316,6 +312,9 @@ $thumb-background: rgba(31, 163, 191, 0.05);
   width: 90%;
   max-width: 1200px;
 }
+
+
+/* Modal Content */
 
 /* The Close Button */
 .close {

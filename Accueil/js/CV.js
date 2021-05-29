@@ -1,7 +1,7 @@
 /* modal */
 
 // Get the modal
-var modal = document.getElementById("myModal1"); /* html */
+var modal = document.getElementById("myModal7"); /* html */
 var modal3 = document.getElementById("myModal3"); /* css */
 var modal4 = document.getElementById("myModal4"); /* php */
 

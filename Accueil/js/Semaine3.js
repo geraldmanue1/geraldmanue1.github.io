@@ -1,82 +1,82 @@
-/* image 1 */
+/* image 7 */
 
-function openModal1() {
-  document.getElementById("myModal1").style.display = "block";
+function openModal7() {
+  document.getElementById("myModal7").style.display = "block";
 }
 
-function closeModal1() {
-  document.getElementById("myModal1").style.display = "none";
+function closeModal7() {
+  document.getElementById("myModal7").style.display = "none";
 }
 
-var slideIndex1 = 1;
-showSlides1(slideIndex1);
+var slideIndex7 = 1;
+showSlides7(slideIndex7);
 
-function plusSlides1(n) {
-  showSlides1(slideIndex1 += n);
+function plusSlides7(n) {
+  showSlides7(slideIndex7 += n);
 }
 
-function currentSlide1(n) {
-  showSlides1(slideIndex1 = n);
+function currentSlide7(n) {
+  showSlides7(slideIndex7 = n);
 }
 
-function showSlides1(n) {
-  var i1;
-  var slides1 = document.getElementsByClassName("mySlides1");
-  var dots1 = document.getElementsByClassName("demo1");
-  var captionText1 = document.getElementById("caption1");
-  if (n > slides1.length) {slideIndex1 = 1}
-  if (n < 1) {slideIndex1 = slides1.length}
-  for (i1 = 0; i1 < slides1.length; i1++) {
-      slides1[i].style.display = "none";
+function showSlides7(n) {
+  var i7;
+  var slides7 = document.getElementsByClassName("mySlides7");
+  var dots7 = document.getElementsByClassName("demo7");
+  var captionText7 = document.getElementById("caption7");
+  if (n > slides7.length) {slideIndex7 = 1}
+  if (n < 1) {slideIndex7 = slides7.length}
+  for (i7 = 0; i7 < slides7.length; i7++) {
+      slides7[i].style.display = "none";
   }
-  for (i1 = 0; i1 < dots1.length; i1++) {
-      dots1[i1].className = dots1[i1].className.replace(" active", "");
+  for (i7 = 0; i7 < dots7.length; i7++) {
+      dots7[i7].className = dots7[i7].className.replace(" active", "");
   }
-  slides1[slideIndex1-1].style.display = "block";
-  dots1[slideIndex1-1].className += " active";
-  captionText1.innerHTML = dots1[slideIndex1-1].alt;
+  slides7[slideIndex7-1].style.display = "block";
+  dots7[slideIndex7-1].className += " active";
+  captionText7.innerHTML = dots7[slideIndex7-1].alt;
 }
-/* fin image 1 */
+/* fin image 7 */
 
 
 
-/* image 2*/
 
-function openModal2() {
-  document.getElementById("myModal2").style.display = "block";
-}
+/* image 8 */
 
-function closeModal2() {
-  document.getElementById("myModal2").style.display = "none";
+function openModal8() {
+  document.getElementById("myModal8").style.display = "block";
 }
 
-var slideIndex2 = 1;
-showSlides2(slideIndex2);
-
-function plusSlides2(n) {
-  showSlides2(slideIndex2 += n);
+function closeModal8() {
+  document.getElementById("myModal8").style.display = "none";
 }
 
-function currentSlide2(n) {
-  showSlides2(slideIndex2 = n);
+var slideIndex8 = 1;
+showSlides8(slideIndex8);
+
+function plusSlides8(n) {
+  showSlides8(slideIndex8 += n);
 }
 
-function showSlides2(n) {
-  var i2;
-  var slides2 = document.getElementsByClassName("mySlides2");
-  var dots2 = document.getElementsByClassName("demo2");
-  var captionText2 = document.getElementById("caption2");
-  if (n > slides2.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = slides2.length}
-  for (i2 = 0; i2 < slides2.length; i2++) {
-      slides2[i2].style.display = "none";
+function currentSlide8(n) {
+  showSlides8(slideIndex8 = n);
+}
+
+function showSlides8(n) {
+  var i8;
+  var slides8 = document.getElementsByClassName("mySlides8");
+  var dots8 = document.getElementsByClassName("demo8");
+  var captionText8 = document.getElementById("caption8");
+  if (n > slides8.length) {slideIndex8 = 1}
+  if (n < 1) {slideIndex8 = slides8.length}
+  for (i8 = 0; i8 < slides8.length; i8++) {
+      slides8[i8].style.display = "none";
   }
-  for (i2 = 0; i2 < dots2.length; i2++) {
-      dots2[i2].className = dots2[i2].className.replace(" active", "");
+  for (i8 = 0; i8 < dots8.length; i8++) {
+      dots8[i8].className = dots8[i8].className.replace(" active", "");
   }
-  slides2[slideIndex2-1].style.display = "block";
-  dots2[slideIndex2-1].className += " active";
-  captionText2.innerHTML = dots2[slideIndex2-1].alt;
+  slides8[slideIndex8-1].style.display = "block";
+  dots8[slideIndex8-1].className += " active";
+  captionText8.innerHTML = dots8[slideIndex8-1].alt;
 }
-
-/* fin image 2 */
+/* fin image 8 */
