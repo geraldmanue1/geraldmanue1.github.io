@@ -1,41 +1,41 @@
-/* image 1 */
+/* image 9 */
 
-function openModal7() {
-  document.getElementById("myModal7").style.display = "block";
+function openModal9() {
+  document.getElementById("myModal9").style.display = "block";
 }
 
-function closeModal7() {
-  document.getElementById("myModal7").style.display = "none";
+function closeModal9() {
+  document.getElementById("myModal9").style.display = "none";
 }
 
-var slideIndex7 = 1;
-showSlides7(slideIndex7);
+var slideIndex9 = 1;
+showSlides9(slideIndex9);
 
-function plusSlides7(n) {
-  showSlides7(slideIndex7 += n);
+function plusSlides9(n) {
+  showSlides9(slideIndex9 += n);
 }
 
-function currentSlide7(n) {
-  showSlides7(slideIndex7 = n);
+function currentSlide9(n) {
+  showSlides9(slideIndex9 = n);
 }
 
-function showSlides7(n) {
-  var i1;
-  var slides1 = document.getElementsByClassName("mySlides7");
-  var dots1 = document.getElementsByClassName("demo1");
-  var captionText1 = document.getElementById("caption1");
-  if (n > slides1.length) {slideIndex7 = 1}
-  if (n < 1) {slideIndex7 = slides1.length}
-  for (i1 = 0; i1 < slides1.length; i1++) {
-      slides1[i].style.display = "none";
+function showSlides9(n) {
+  var i9;
+  var slides9 = document.getElementsByClassName("mySlides9");
+  var dots9 = document.getElementsByClassName("demo9");
+  var captionText9 = document.getElementById("caption9");
+  if (n > slides9.length) {slideIndex9 = 1}
+  if (n < 1) {slideIndex9 = slides9.length}
+  for (i9 = 0; i9 < slides9.length; i9++) {
+      slides9[i].style.display = "none";
   }
-  for (i1 = 0; i1 < dots1.length; i1++) {
-      dots1[i1].className = dots1[i1].className.replace(" active", "");
+  for (i9 = 0; i9 < dots9.length; i9++) {
+      dots9[i9].className = dots9[i9].className.replace(" active", "");
   }
-  slides1[slideIndex7-1].style.display = "block";
-  dots1[slideIndex7-1].className += " active";
-  captionText1.innerHTML = dots1[slideIndex7-1].alt;
+  slides9[slideIndex9-1].style.display = "block";
+  dots9[slideIndex9-1].className += " active";
+  captionText9.innerHTML = dots9[slideIndex9-1].alt;
 }
-/* fin image 1 */
+/* fin image 9 */
 
 

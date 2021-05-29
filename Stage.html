@@ -269,7 +269,7 @@
                                     </div>
         
         <button class="collapsible"><b>Quelque Compte rendu de la Semaine</b></button>
-                                    <div class="content" style="padding-bottom:5px; max-height: 652px;">
+                                    <div class="content" style="padding-bottom:5px; max-height: 1500px;">
                                         <br>
                                         
         <div class="container" >
@@ -532,7 +532,7 @@
 
         <div class="row" style="padding-bottom:80px; padding-top:40px; padding-right: 60px; padding-left: 20px;">
           <div class="column flex-item-right" >
-            <img src="image/Stage/Serveur/1.png" style="width:100%;  height: 100%;" onclick="openModal3();currentSlide3(1)" class="hover-shadow cursor">
+            <img src="image/Stage/Serveur/1.png" style=" width:100%;  height: 100%; " onclick="openModal3();currentSlide3(1)" class="hover-shadow cursor">
           </div>
         
         </div>
@@ -960,6 +960,7 @@
         
          <script src='Accueil/js/Semaine2.js'></script> 
         </div>
+        
         </div>
         
          
@@ -1050,217 +1051,227 @@
     </div></div></div>
         <div class="mySlides8">
           <div class="numbertext">2 / 19</div>
-          <img src="image/Stage/Serveur/2.png" style="width:100%;">
+          <img src="image/Stage/change_IP/2-debut_etc_network_interfaces.png" style="width:100%" >
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"><p class="paragrapheS2" style="color:black;">Choisissez votre langue comme vous voulez ci-dessus(en haut).</p></div>
+          <div class="myModal8"><p class="paragrapheS2" style="color:black;"><p class="paragrapheS2" style="color:black"> En tapant : <pre class="code"><b>nano /etc/network/interfaces</b> </pre> </p>
+            <p class="paragrapheS2" style="color:black"> En va sur le fichier, pour instant en a rien toucher (configuration standard).</div>
      </div>
         </div>
     </div></div></div>
         <div class="mySlides8">
           <div class="numbertext">3 / 19</div>
-          <img src="image/Stage/Serveur/3.png" style="width:100%;">
-          <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+          <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+            <div class="myModal2" style = "margin: 5px 5px 5px 5px;
+          padding-top: 40px;">  <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"><p class="paragrapheS2" style="color:black;">Ensuite, choisissez votre emplacement et sélectionnez la disposition du clavier. Les écrans suivants seront différents selon vos choix. </p> <p class="paragrapheS2" style="color:black;"> Sélectionnez simplement le pays et la disposition de clavier qui vous conviennent car ils définissent la langue que votre système Debian utilisera sur le shell et la disposition de clavier utilisée.</p></div>
+          <p class="paragrapheS3";  style="color:black;"> En ajoute le texte suivant ci-dessous pour accès adresse IP de <b>pfsense DMZ1</b>.</div>
+       </div>
+            <img src="image/Stage/change_IP/3-change_ip_etc_network_interfaces.png" style="width:100%;">         
+          
      </div>
         </div></div></div></div>
         
         <div class="mySlides8">
           <div class="numbertext">4 / 19</div>
-          <img src="image/Stage/Serveur/4.png" style="width:100%;">
+          <img src="image/Stage/change_IP/4-restore_le_serveur.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8">Quand à fini le chargement. </p>
-    
-    <p class="paragrapheS2" style="color:black;"> Entrez votre nom de machine que vous voulez sur le screen ci-dessus.</p></div>
+          <div class="myModal8"><p class="paragrapheS3" style="color:black"> En rédemare le réseau avec la commande : <pre class="code"><b>systemctl restart networking</b> </pre> </p></div>
      </div>
         </div></div></div></div>
     
           <div class="mySlides8">
           <div class="numbertext">5 / 19</div>
-          <img src="image/Stage/Serveur/5.png" style="width:100%;">
+          <img src="image/Stage/change_IP/5-changement_ip_effectuer.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8">  <p class="paragrapheS2" style="color:black;"> Quand à fini le chargement. Entrez votre nom de machine que vous voulez ci-dessus </p>
-            <p class="paragrapheS2" style="color:black;">  Puis, <b>Continuer</b>. </p> </div>
+          <div class="myModal8">  <p class="paragrapheS2" style="color:black;"> <p class="paragrapheS3" style="color:black"> Avec la commande <b>ip add</b> en doit ré-vérifier encore adresse IP si c'est bien pris en compte.</p>
+            <p class="paragrapheS3" style="color:black"> La commande ci-dessous :<pre class="code"><b>ip add</b> </pre></p>
+            <p class="paragrapheS3" style="color:black"> La vérification est correct donc en passe les étapes suivant.</p> </div>
      </div>
         </div></div></div></div>
     
     
           <div class="mySlides8">
           <div class="numbertext">6 / 19</div>
-          <img src="image/Stage/Serveur/6.png" style="width:100%;">
+          <img src="image/Stage/change_IP/6-ping_plus_update.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;"> Lire l’instruction : <b>Configurer le réseau</b> ci-dessus et <b>Continuer</b>.</p> </div>
+          <div class="myModal8"> <p class="paragrapheS3" style="color:black"> En doit mettre à jour pour que adresse IP soit à jour.</p> </div>
      </div>
         </div></div></div></div>
     
           <div class="mySlides8">
           <div class="numbertext">7 / 19</div>
-          <img src="image/Stage/Serveur/7.png" style="width:100%;">
+          <img src="image/Stage/change_IP/7-connecter_serveur_IP.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8">  <p class="paragrapheS2" style="color:black;"> Ensuite, donnez un mot de passe à l'utilisateur <b>root (super utilisateur de la machine)</b> :
-    
-            <p class="tirer" style="color:black"> - Je mets pour l’instant le mot de passe <b>naibed01</b> pour utilisateur <b>root</b> et vous pouvez changer mettre le mot de passe comme vous voulez.</p>
-    
-     <p class="tirer" style="color:black"> - Et si vous avez à peur pour une erreur, vous pouvez cocher sur <b>Afficher le mot de passe en clair</b> :</p>
-            <p class="paragrapheS2" style="color:black;"> Par la suite, <b>Continuer</b>. </p></div>
+          <div class="myModal8">   <p class="paragrapheS3" style="color:black"> Adresse ip local de pfsense.<p> 
+            <p class="paragrapheS3" style="color:black"> Apuie sur <b>Avancé</b> et par la suite les étapes suivant.</p></div>
      </div>
         </div></div></div></div>
     
           <div class="mySlides8">
           <div class="numbertext">8 / 19</div>
-          <img src="image/Stage/Serveur/8.png" style="width:100%;">
+          <img src="image/Stage/change_IP/8-accepter_la_securite.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Confirmation du même mot de passe et <b>Continuer</b>.</p> </div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Puis <b>Accepter le risque</b> et poursuivre la page suivant. </div>
      </div>
         </div></div></div></div>
     
           <div class="mySlides8">
           <div class="numbertext">9 / 19</div>
-          <img src="image/Stage/Serveur/9.png" style="width:100%;">
+          <img src="image/Stage/change_IP/9-connecter_pfsense.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Par la suite choisissez votre <b>nom utilisateur</b> pour vous connecter à votre machine debian et <b>Continuer</b>.</p> </div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">En peut se connecter pour configurer IP à distance de notre site MandelaShop.</p> </div>
      </div>
         </div></div></div></div>
     
           <div class="mySlides8">
           <div class="numbertext">10 / 19</div>
-          <img src="image/Stage/Serveur/10.png" style="width:100%;">
+          <img src="image/Stage/change_IP/10-pfsense_a_distance.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Lire l’instruction ci-dessus.</p> <p class="paragrapheS2" style="color:black;"> <b>Créer les utilisateurs</b> et <b>choisir les mots de passe</b> ci-dessus et <b>Continuer</b>.</p></div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;"> Voici IP a distance de pfsense En peut se connecter pour configurer IP à distance de notre site MandelaShop.</p></div>
      </div>
         </div>
     </div></div></div>
          <div class="mySlides8">
           <div class="numbertext">11 / 19</div>
-          <img src="image/Stage/Serveur/11.png" style="width:100%;" >
+          <img src="image/Stage/change_IP/10-pfsense_a_distance.png" style="width:100%;" >
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">
-            Par la suite, choisissez votre <b>mot de passe pour se connecter à votre machine</b> debian et <b>Continuer</b>.</p> </div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Voici IP a distance de pfsense En peut se connecter pour configurer IP à distance de notre site MandelaShop.</p> </div>
      </div>
         </div>
     </div></div></div>
          <div class="mySlides8">
           <div class="numbertext">12 / 19</div>
-          <img src="image/Stage/Serveur/12.png" style="width:100%;">
+          <img src="image/Stage/change_IP/12-aller_sur_nat.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Ensuite, confirmation du même <b>mot de passe</b> et <b>Continuer</b>.</p> </div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">En va sur <b>Firewall/NAT</b>.</p> </div>
      </div>
         </div>
     </div></div></div>
          <div class="mySlides8">
           <div class="numbertext">13 / 19</div>
-          <img src="image/Stage/Serveur/13.png" style="width:100%;">
+          <img src="image/Stage/change_IP/13-tout_ip_pfsense_nat.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Vous devez maintenant partitionner votre disque dur. Par souci de simplicité, je sélectionne Guidé - utiliser le disque entier  - cela créera une grande partition pour le système de fichiers <b>/</b> et une autre pour le swap (bien sûr, le partitionnement dépend entièrement de vous - si vous savez ce que vous faites, vous peut également configurer vos partitions manuellement). Pour les systèmes d'hébergement comme les didacticiels de serveur parfait ISPConfig 3, vous pouvez choisir par exemple 60 Go pour <b>/</b> et une grande partition <b>/var</b> car toutes les données 
-            de site Web et de courrier électronique sont stockées dans les sous-répertoires de <b>/var</b>.<p></div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Sur NAT en ajoute une nouvelle <b>Rule</b> (Règle).</p></div>
      </div>
         </div>
     </div></div></div>
     
          <div class="mySlides8">
           <div class="numbertext">14 / 19</div>
-          <img src="image/Stage/Serveur/14.png" style="width:100%;">
+          <img src="image/Stage/change_IP/15-configuration_adresse_ip.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Sélectionnez le disque que vous souhaitez partitionner ci-dessus.<p> </div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Configuration de nouvelle <b> Rules</b> (Règle).</p> </div>
+          
      </div>
+    
+
+    </div>
         </div>
         
-    </div></div></div>
+    </div>  <img src="image/Stage/change_IP/16-ip_ete_ajoute_nat.png" style="width:100%">
+    <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+       <div class="myModal2" style = "margin: 5px 5px 5px 5px;
+     padding-top: 40px;"><p class="paragrapheS3" style="color:black"> La nouvelle règle a été ajouter.</p></div>
+  </div></div></div>
     
          <div class="mySlides8">
           <div class="numbertext">15 / 19</div>
-          <img src="image/Stage/Serveur/15.png" style="width:100%;">
+          <img src="image/Stage/change_IP/17-aller_sur_rule.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Sélectionnez ensuite le schéma de partitionnement. Comme mentionné précédemment, je sélectionne Tous les fichiers dans une partition 
-            (recommandé pour les nouveaux utilisateurs) par souci de simplicité - c'est à votre goût ce que vous choisissez ici donc pour l’instant en choisissent le premier partition. </p></div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Aller sur <b> Firewall/Rules</b> (Règle) pour ajouté la sécurité.</p></div>
      </div>
         </div>
-        </div></div></div>
+        </div> <img src="image/Stage/change_IP/18-tout_ip_pfsense_rule.png" style="width:100%">
+        <img src="image/Stage/change_IP/19-ajoute_ip_pfsense_rule.png" style="width:100%">
+         <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+            <div class="myModal2" style = "margin: 5px 5px 5px 5px;
+          padding-top: 40px;"><p class="paragrapheS3" style="color:black"> Pour instant en a pas encore ajouté la sécurité. En va ajouté en cliquer ajouter sur le boutton vert flêche bas.</p></div>
+       </div>
+      
+      
+      </div></div>
     
     
          <div class="mySlides8">
           <div class="numbertext">16 / 19</div>
-          <img src="image/Stage/Serveur/16.png" style="width:100%;">
+          <img src="image/Stage/change_IP/20-ip_configure_rule.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">En a laissé par défaut et n’ a rien modifier.</p>
-    
-            <p class="paragrapheS2" style="color:black;">Le résultat ci-dessus. </p>
-              
-              <p class="paragrapheS2" style="color:black;"> Si vous voulez modifier, vous pouvez changer la partition et ré-ajouter. </p> </div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Configuration de nouvelle <b> Rules</b> (Règle) de sécurité.</p></div>
      </div>
         </div>
-        </div></div></div>
+        </div> <img src="image/Stage/change_IP/21-ip_a_ete_ajoute_rule.png" style="width:100%">
+        <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+           <div class="myModal2" style = "margin: 5px 5px 5px 5px;
+         padding-top: 40px;"><p class="paragrapheS3" style="color:black"> La nouvelle règle de sécurité a été ajouter.</p>  </div></div></div></div>
     
          <div class="mySlides8">
           <div class="numbertext">17 / 19</div>
-          <img src="image/Stage/Serveur/18.png" style="width:100%;">
+          <img src="image/Stage/change_IP/22-serveur_a_distance.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Quand on a fini de modifier le partition et choisir <b>Oui</b>.</p>
-    
-       <p class="paragrapheS2" style="color:black;">Pour dire que lorsque vous êtes invité: "Écrivez les modifications sur le disque ?</p> <p class="paragrapheS2" style="color:black;"> Puis, Continuer. </p> </div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Serveur <b>apache</b> à distance par la règlage de pfsense.</p> </div>
      </div>
         </div>
         </div></div></div>
@@ -1269,31 +1280,36 @@
     
            <div class="mySlides8">
           <div class="numbertext">18 / 19</div>
-          <img src="image/Stage/Serveur/19.png" style="width:100%;">
+          <img src="image/Stage/change_IP/23-connecter_wordpress.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Un petit chargement pour passer la suite.</p>
-              La suite 
-           <p class="paragrapheS2" style="color:black;"> C’est pas important en met <b>Non</b> pour l’instant et passe par la suite.</p>
-    <p class="paragrapheS2" style="color:black;">C’est-à-dire : je vais faire une installation en réseau (tous les packages 
-       d'installation supplémentaires sont téléchargés sur Internet), donc je choisis ici de ne pas analyser de disques d'installation supplémentaires.</p></div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">On va sur proxmox pour change IP sur wordpress. En doivent se connecte sur le site wordpress pour changer IP pour accèder à distance.</p></div>
      </div>
         </div>
-    </div></div></div>
+    </div>
+    <img src="image/Stage/change_IP/24-reglage_generale.png" style="width:100%">
+    <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+       <div class="myModal2" style = "margin: 5px 5px 5px 5px;
+     padding-top: 40px;"><p class="paragrapheS3" style="color:black"> Aller sur <b> Règlages</b> appuie <b>Général</b>.</p></div>
+  </div>
+ 
+ <img src="image/Stage/change_IP/25-ancien_adresse_web.png" style="width:100%">
+    <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+       <div class="myModal2" style = "margin: 5px 5px 5px 5px;
+     padding-top: 40px;"><p class="paragrapheS3"  style="color:black"> Adresse Par défaut <b>localhost</b>, en change adresse IP par adresse IP qu'on a configuré.</p>
+  </div></div></div></div>
            <div class="mySlides8">
           <div class="numbertext">19 / 19</div>
-          <img src="image/Stage/Serveur/20.png" style="width:100%;">
+          <img src="image/Stage/change_IP/27-site_en_ligne_wordpress.png" style="width:100%;">
           <div class="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog8" style="overflow-y: scroll; max-height:85%; " > 
                
                     <div class="modal-body8">
             <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
-          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Par la suite, vous devez configurer apt. Comme nous utilisons le CD Debian Netinstall, qui ne contient qu'un ensemble minimal de paquets, nous devons utiliser un miroir réseau. </p>
-    
-            <p class="paragrapheS2" style="color:black;"> <b>Sélectionnez le pays</b> dans lequel se trouve le miroir réseau que vous souhaitez utiliser (il s'agit généralement du pays dans lequel se trouve votre système serveur).</p> </div>
+          <div class="myModal8"> <p class="paragrapheS2" style="color:black;">Notre site à distance sur wordpress. </div>
      </div>
         </div>
     
@@ -1308,16 +1324,61 @@
         </div>
     
     
-        
+     
     
      <script src='Accueil/js/Semaine3.js'></script> 
     </div>
     </div>
+  
+     <!-- semaine 4-->
+
+    </div> <div id="menu3" class="tab-pane fade collapsible2" style="padding-top:20px">
+      <p></p>
+      <h4 class="card-text" style="color: black; padding-left:10px; padding-bottom:0px"><b>Semaine 4 :</b></h4> <br>
+    
+      <p style="color: black; padding-left:10px;">La quatrième semaine de stage , répare le site car un problème de réseau sur Debian (ne trouve plus l'interface réseau).</p>
+      <p style="color: black; padding-left:10px;">La quatrième de stage, refaire une machine de test avant passer par le vrai machine au cas de problème.
+        <h4 class="card-text" style="color: black; padding-left:10px; padding-bottom:0px"><b>Objectif :</b></h4> <br>
+        <p style="color: black; padding-left:10px;"> <b>En commence réflechie UML (Cas utilisation) ci-dessous :</b>
+    
+      </p>
+      <div class ="flex-container">
+    
+    <div class="row" style="padding-bottom:80px; padding-top:40px; padding-right: 60px; padding-left: 20px;">
+    <div class="column flex-item-left" >
+    <img src="image/Stage/UML_cas_utilisation.png" style="width:100%;  height: 100%;" onclick="openModal9();currentSlide9(1)" class="hover-shadow cursor">
+    </div>
+    
+    </div>
+    <!--onclick="this.style.display='none'"> -->
+    <div id="myModal9" class="modal">
+    <span class="close cursor" onclick="closeModal9()">&times;</span>
+    <div class="modal-content" >
+    
+    <div class="mySlides9">
+    <div class="numbertext">1 / 1</div>
+      <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
+    <div class="myModal9" style = "margin: 5px 5px 5px 5px;
+    padding-top: 40px;">
+    
+    
+    </div>
+    </div>
+    <img src="image/Stage/UML_cas_utilisation.png" style="width:100%" >
+    
+    </div>
+    </div>  
+    
+    </div>
+    <script src='Accueil/js/Semaine4.js'></script> 
+    
+    
     
      
-
-</div> </div></div>
-    <!-- fin image 8 -->
+    </div>
+    
+    </div> </div>
+        <!-- fin image 8 -->
             <br>
         </div>
              
