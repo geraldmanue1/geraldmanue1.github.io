@@ -982,7 +982,7 @@
         
         <!-- image 4 -->
         <div class ="flex-container">
-                  <div> <p class="paragrapheS2"> LAMP : </p></div>
+                  <div> <p class="paragrapheS2" style="color:black"> LAMP : </p></div>
         
         
                <div class="row" style="padding-bottom:80px; padding-top:40px; padding-right: 60px; padding-left: 20px;">
@@ -1001,17 +1001,82 @@
                     <!--<img src="image/Serveur/0.2.png" style="width:100%"> -->
                 <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
               <div class="myModal4" style= "padding-top: 1px;
-            padding-left: 50px;">A complèter</div>
-         </div>
+            padding-left: 50px;">
+                  <div> <p class="paragrapheS2" style="color:black"> Tout d'abord on va commencer par installer MySQL avant Apache2 pour suivre l'ordre de l'installation </p></div>
+                  <div> <h4 class="paragrapheS2" style="color:black">  Installation de MySQL : </h4></div>
+                  <div> <p class="paragrapheS2" style="color:black">  </p></div>
+                  <p class="paragrapheS2" style="color:black"> Avant d’aller plus loin, commençons par mettre à jour Debian:<pre class="code"><b style="padding-left: 8px;">sudo apt update && apt-get upgrade -y</b> </pre></p>
+                
+                  <div> <p class="paragrapheS2" style="color:black"> Sur Debian, déplacez-vous dans le dossier temporaire (tmp) et téléchargez le package d’installation à l’aide de la commande Linux wget en collant l’adresse du package récupéré précédemment. </p></div>
+                  <p class="paragrapheS2" style="color:black"> <pre class="code"><b style="padding-left: 9px;">cd /tmp</b> <br> <b> wget https://dev.mysql.com/get/mysql-apt-config_0.8.16-1_all.deb</b></pre></p>
+                  <div> <p class="paragrapheS2" style="color:black"> Exécutez la commande ls pour mieux voir si le package s est visible dans le fichier </p></div>
+                  <p class="paragrapheS2" style="color:black"> <pre class="code"><b style="padding-left: 8px;">ls</b> <br> <b>mysql-apt-config_0.8.15-1_all.deb</b> <br> <b>...</b></pre></p>
+                  <div> <p class="paragrapheS2" style="color:black; ">  ... : la suite de reste <br> La package est bien installer car il s’affiche au dessous de la commande ls</p></div>
+                  <div> <p class="paragrapheS2" style="color:black">  Il ne reste plus qu’à installer MySQL avec la commande Linux dpkg . L’option -i permet d’installer le package.</p></div>
+                  <p class="paragrapheS2" style="color:black"> <pre class="code"><b style="padding-left: 8px;">sudo dpkg -i mysql-apt-config*</b> </pre></p>
+
+                  <div> <p class="paragrapheS2" style="color:black"> Cette commande n’installe pas directement MySQL, elle permet simplement des référentiels à Debian. A part si vous êtes 
+                    un pro de <b>MySQL</b>, vous pouvez laisser les options par défaut. La con figuration terminée, utilisez la flèche vers le bas pour accéder à l’option de menu <b>Ok </b>
+                    et appuyez sur la touche <b>Entrée</b> du clavier. </p>
+                  
+                   <div><p class="paragrapheS2" style="color:black">Comme vous avez fini de régler le paramètre de MySQL passe l'étape suivante.</p></div>
+                   <div><p class="paragrapheS2" style="color:black">Ensuite, mettez à jour le système.</p>
+                    <p class="paragrapheS2" style="color:black"> <pre class="code"><b style="padding-left: 8px;">sudo apt update</b> </pre></p></div>
+
+                    <div>   <p class="paragrapheS2" style="color:black">Par la suite, choisit un mot de passe de root pour au le compte utilisateur sur la commande en tapant <b>sudo MySQL</b>
+                      et sélection défaut authentification plugiciel et vous choisissez ce que vous voulez, passe l'étape suivante.</p></div>
+                    <div>    <p class="paragrapheS2" style="color:black">Maintenant, lancez l’installation de MySQL en exécutant.</p></div>
+                      <div>  <p class="paragrapheS2" style="color:black"> <pre class="code"><b style="padding-left: 8px;">sudo apt install mysql-server</b> </pre></p></div>
+                        <div>   <p class="paragrapheS2" style="color:black">Vérifier que MySQL est correctement installé et démarré Le serveur MySQL démarre sous la forme d’un 
+                     service dès la fin de l’installation.</p></div>
+                     <div> <p class="paragrapheS2" style="color:black"> <pre class="code"><b style="padding-left: 8px;">sudo systemctl status mysql</b> </pre></p></div>
+
+                  
+
+                     
+                     
+                      
+                  <br>
+                  
+               
+</div></div>
              
             </div>
+        </div>
         
             <div class="mySlides4">
               <div class="numbertext">2 / 2</div>
               <!--<img src="image/Serveur/0.3.png" style="width:100%"> -->
                 <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
               <div class="myModal4" style= "padding-top: 1px;
-            padding-left: 50px;">A complèter</div>
+            padding-left: 50px;">  
+            
+            <div> <h4 class="paragrapheS2" style="color:black"> Installation Apache : </h4></div>
+
+<div> <p class="paragrapheS2" style="color:black"> Enfin, en installe les paquets nécessaires pour apache et php avec cette commande : </p></div>
+<p class="paragrapheS2" style="color:black"> <pre class="code"><b style="padding-left: 8px;">sudo apt install apache2 php libapache2-mod-php php-mysql</b> </pre></p>
+
+<div> <p class="paragrapheS2" style="color:black"> La pile LAMP est alors installée. Cependant la plupart des scripts PHP (CMS, forums, 
+ applications web en tout genre) utilisent des modules de PHP pour bénéficier de certaines fonctionnalités. Voici comment installer 
+ les modules les plus courants : </p></div>
+
+ <p class="paragrapheS2" style="color:black"> <pre class="code"><b>sudo apt install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip</b> </pre></p>
+ <div> <p class="paragrapheS2" style="color:black"> Une fois les paquets installés, ouvrez un des liens suivants dans votre navigateur ci-desous : </p></div>
+ <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
+  <h6 style="color: black; padding-left: 50px"> - <a   href="http://127.0.0.1/"  Style="text-decoration:none; color:blue;">  http://127.0.0.1/</a></h6></h6>
+  <h6 style="color: black; padding-left: 50px"> - <a   href="http://localhost/"  Style="text-decoration:none; color:blue;">  http://localhost/ </a></h6></h6>
+</div>
+  <br>
+  <div><p class="paragrapheS2" style="color:black"> Résultat de la fin de l'installation : </p></div>
+
+  <center><img src="image/Stage/resultat_apache.png" class="center-block img-responsive img-rounded" style="width: 400px;
+
+                         height: 300px;"/></center>
+
+<br>
+<br>
+
+</div>
          </div>
             </div>
         
@@ -1041,7 +1106,7 @@
         <!--image 5 -->
                  <!-- <p class="paragrapheS2" style="padding-top: 30px"> Installation Debian : </p> -->
                  
-                  <div> <p class="paragrapheS2"> Adminer : </p></div>
+                  <div> <p class="paragrapheS2" style="color:black"> Adminer : </p></div>
         
         <div class="row" style="padding-bottom:80px; padding-top:40px; padding-right: 60px; padding-left: 20px;">
           <div class="column flex-item-right">
@@ -1054,18 +1119,50 @@
           <div class="modal-content" >
         
             <div class="mySlides5">
-              <div class="numbertext">1 / 2</div>
+              <div class="numbertext">1 / 1</div>
               <!-- <img src="image/Serveur/0.2.png" style="width:100%" > -->
                 <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
               <div class="myModal5" style= "padding-top: 1px;
-            padding-left: 50px; ">A complèter</div>
+            padding-left: 50px; ">
+            <p class="paragrapheS2" style="color:black">Avant installé adminer en commencer d'abord créer un nouvel BDD de MySQL et nouvelle authentification.</p>
+
+<p class="paragrapheS2" style="color:black"> Pour créer un nouvel BDD de MySQL et nouvelle authentification, il faut d'abord se connecte au serveur MySQL (en ajoutant -p si on a spécifié un mot de passe pour root) : <pre class="code"><b style="padding-left: 8px;">sudo mysql</b> </pre></p>
+
+  <p class="paragrapheS2" style="color:black"> Puis on créé une base de données example associée à un utilisateur userExample (en remplaçant 
+    mot_de_passe par un mot de passe complexe) : <pre class="code"><b style="padding-left: 8px;">CREATE DATABASE example;</b><br><b style="padding-left: 8px;">CREATE USER 'userExample'@'localhost' IDENTIFIED BY 'mot_de_passe';</b> <br> <b>GRANT ALL PRIVILEGES ON example.* TO 'userExample'@'localhost'; FLUSH</b><br><b style="padding-left: 8px;">PRIVILEGES; QUIT;</b></pre></p>
+
+
+            
+            <div> <h4 class="paragrapheS2" style="color:black">  Installation Adminer : </h4></div>
+                  <div> <p class="paragrapheS2" style="color:black">  </p></div>
+                  <p class="paragrapheS2" style="color:black"> Va sur le dossier le dossier de <b>/var/www/html</b> en tapant le commande <b>cd</b> <pre class="code"><b style="padding-left: 8px;">cd /home/sio2-sms/Téléchargements/</b> </pre></p>
+                  <p class="paragrapheS2" style="color:black"> <b>Télécharger le lien</b> en tapant<b> wget</b> et <b>renomme</b> en tapant <b>mv</b> avec un <b>étoile</b> pour dire tout les fichier et dossier pris en compter.<pre class="code"><b style="padding-left: 8px;">sudo wget https://github.com/vrana/adminer/releases/download/v4.7.7/adminer- 4.7.7.php && sudo mv adminer-* adminer.php</b> </pre> </p> 
+                  <div> <p class="paragrapheS2" style="color:black">  ou  <br> <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
+                    <h6 style="color: black; padding-left: 28px;"> <a   href="https://www.adminer.org/"  Style="text-decoration:none; color:blue;">  https://www.adminer.org/</a></h6></h6>
+                 
+                  </div></p></div>
+                
+
+                  <div> <p class="paragrapheS2" style="color:black"> Puis, copie tous le fichier en tapant <b>cp</b> <b>-r</b> et déplace le fichier dans le dossier <b>/var/www/html/</b> et ensuite comme vous avez fini déplacement de dossier.   </p></div>
+
+                  
+                  <div> <h4 class="paragrapheS2" style="color:black">     Voici le résultat :   </h4></div>
+                  <br>
+              
+                  <center><img src="image/Stage/resultat_adminer.png" class="center-block img-responsive img-rounded" style="width: 400px;
+
+                    height: 300px;"/></center>
+                    <br>
+                 
+                 
+          </div>
          </div>
              
             </div>
         
-            <div class="mySlides5">
+           <!-- <div class="mySlides5">
               <div class="numbertext">2 / 2</div>
-              <!-- <img src="image/Serveur/0.3.png" style="width:100%"> -->
+            
                 <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
               <div class="myModal5" style= "padding-top: 1px;
             padding-left: 50px;" >A complèter</div>
@@ -1078,14 +1175,14 @@
             <div class="caption-container">
               <u id="caption5"></u>
             </div>
-        
+        -->
         
             
         
          <script src='Accueil/js/Semaine2.js'></script> 
          </div>
         </div>
-        
+    
         
         <!-- Termine image 5 -->
         
@@ -1106,18 +1203,63 @@
           <div class="modal-content" >
         
             <div class="mySlides6">
-              <div class="numbertext">1 / 2</div>
+              <div class="numbertext">1 / 1</div>
              <!-- <img src="image/Serveur/1.png" style="width:100%" > -->
                 <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
               <div class="myModal6" style= "padding-top: 1px;
-            padding-left: 50px;">Premier Création machine virtuel</div>
+            padding-left: 50px;">
+          <p class="paragrapheS2" style="color:black"> La dernier partie installation WordPress pour faire le site Mandela Shop.</p>
+
+          <p class="paragrapheS2" style="color:black"> Tout d'abord téléchargeons la dernière version de WordPress : <pre class="code"><b style="padding-left: 8px;">wget https://fr.wordpress.org/wordpress-latest-fr_FR.zip</b></pre></p>
+          <p class="paragrapheS2" style="color:black"> Ensuite nous allons extraire le contenu du zip à la racine de notre hôte virtuel (/var/www/wordpress dans cet exemple) : <pre class="code"><b style="padding-left: 8px;">sudo unzip wordpress-latest-fr_FR.zip -d /var/www</b></pre></p>
+          <p class="paragrapheS2" style="color:black"> On va renforcer légèrement la sécurité en attribuant des droits un peu restrictifs aux fichiers :
+             <pre class="code"><b style="padding-left: 8px;">sudo chown www-data:www-data /var/www/html/wordpress -R</b> <b> sudo chmod -R -wx,u+rwX,g+rX,o+rX /var/www/html/wordpress</b> </pre></p>
+
+                    
+                    <div> <h4 class="paragrapheS2" style="color:black">  Installation Adminer : </h4></div>
+                      
+                          <p class="paragrapheS2" style="color:black"> le lien du site :</p>
+                          <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
+                           <h6 style="color: black; padding-left: 50px"> - <a   href="http://127.0.0.1/wordpress/"  Style="text-decoration:none; color:blue;">  http://127.0.0.1/wordpress/</a></h6></h6>
+                           <h6 style="color: black; padding-left: 50px"> - <a   href="http://localhost/wordpress/"  Style="text-decoration:none; color:blue;">  http://localhost/wordpress/ </a></h6></h6>
+                         </div>
+                           <br>
+                           <div><p class="paragrapheS2" style="color:black"> Résultat de la fin de l'installation : </p></div>
+                         
+                           <center><img src="image/Stage/resultat_wordpress.png" class="center-block img-responsive img-rounded" style="width: 400px;
+                         
+                                                  height: 300px;"/></center>
+                         
+                         <br>
+                         <div><p class="paragrapheS2" style="color:black"> Lire information suivant et compléter par rapport votre base de données que vous avez créer précèdent dans commande MySQL. </p></div>
+                         <center><img src="image/Stage/resultat_wordpress_complete_bdd.png" class="center-block img-responsive img-rounded" style="width: 400px;
+                         
+                          height: 300px;"/></center>
+                          <br>
+                         <div><p class="paragrapheS2" style="color:black"> En va créer un nouveau compte pour se connecter sur le site wordpress.</p></div>
+                         <div><p class="paragrapheS2" style="color:black"> Lire instruction et compléter : </p></div>
+                         <center><img src="image/Stage/resultat_wordpress_creation_compte.png" class="center-block img-responsive img-rounded" style="width: 400px;
+                         
+                          height: 300px;"/></center>
+                          <br>
+
+
+                         <div><p class="paragrapheS2" style="color:black"> Connecter et vous et résultat s'affiche : </p></div>
+                         <center><img src="image/Stage/resultat_wordpress_resutat_connecte.png" class="center-block img-responsive img-rounded" style="width: 400px;
+                         
+                          height: 300px;"/></center>
+                          
+                          <br>
+
+
+          
+          </div>
          </div>
              
             </div>
-        
+        <!--
             <div class="mySlides6">
               <div class="numbertext">2 / 2</div>
-             <!-- <img src="image/Stage/Serveur/2.png" style="width:100%"> -->
                 <div class="image2-couleur" style="padding: 10px 10px 10px 10px;">
               <div class="myModal6" style= "padding-top: 1px;
             padding-left: 50px;">Premier Création machine virtuel</div>
@@ -1130,7 +1272,7 @@
         
             <div class="caption-container">
               <u id="caption6"></u>
-            </div>
+            </div>-->
         
         
             
@@ -1576,7 +1718,7 @@
         
                                   
                                     <div class="competences"   style=  "box-shadow : 0px 0px 0px 0px black; margin-bottom: 10px;">
-                                      <h6 style="color: black; font-size: 18px;"> Tous les documentations à fournir Mandela Shop : <a   href="#documentation_stage_MandelaShop.html"  Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
+                                      <h6 style="color: black; font-size: 18px;"> Tous les documentations à fournir Mandela Shop : <a   href="documentation_stage_MandelaShop.html"  Style="text-decoration:none; color:blue;"> <b> cliquez ici </b> </a></h6></h6>
                                       
                                      
         
