@@ -239,15 +239,26 @@ $thumb-background: rgba(31, 163, 191, 0.05);
   overflow: auto;
   background-color: #0000009e;
 }
+/* CSS used here will be applied after bootstrap.css */
 
+.modal8{
+    display: block !important;
+}
+.modal-dialog8{
+      overflow-y: initial !important
+}
+.modal-body8{
+  height: 250px;
+  overflow-y: auto;
+}
 /* Modal Content */
 .modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* The Close Button */
