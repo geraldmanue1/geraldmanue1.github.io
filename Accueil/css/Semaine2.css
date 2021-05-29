@@ -248,7 +248,8 @@ $thumb-background: rgba(31, 163, 191, 0.05);
       overflow-y: initial !important
 }
 .modal-body8{
-  height: 250px;
+  height: 190px;
+  background-color: #29899D;
   overflow-y: auto;
 }
 /* Modal Content */
@@ -257,8 +258,8 @@ $thumb-background: rgba(31, 163, 191, 0.05);
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 100%;
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1150px;
 }
 
 /* The Close Button */
