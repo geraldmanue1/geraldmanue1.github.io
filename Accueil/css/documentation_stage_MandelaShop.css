@@ -24,12 +24,19 @@
   
   .container {
     padding: 0 16px;
-  }
   
+  }
+
+  .container1 {
+    padding: 0 16px;
+      background-color: white;
+  
+  }
   .container::after, .row::after {
     content: "";
     clear: both;
     display: table;
+  
   }
   
   .title {
@@ -51,3 +58,58 @@
   .button:hover {
     background-color: #555;
   }
+
+  .box {
+    display: flex;
+  }
+
+  .un {
+    flex: 1 1 auto;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.23);
+    margin : 10px 10px 10px 10px;
+
+  }
+
+  .sous-un {
+    flex: 1 1 auto;
+    background-color: white;
+    margin : 10px 10px 10px 10px;
+
+  }
+
+.petit {
+  size: 5px;
+  font-size: 15px;
+
+}
+
+.petitTitre {
+  size: 5px;
+  font-size: 15px;
+  line-height: 20px;
+
+}
+.petitpara {
+  size: 5px;
+  font-size: 15px;
+  line-height: 15px;
+
+}
+  .partie-un {
+color: black;
+size;
+  }
+/*
+  .deux {
+    flex: 1 1 auto;
+  }
+
+  .trois {
+    flex: 1 1 auto;
+  }
+
+  .quatre {
+    flex: 1 1 auto;
+  }
+  */
