@@ -1,0 +1,56 @@
+.bg {
+  background-color: #f2efef;
+  width: 400px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.html {
+  background: -webkit-linear-gradient(
+    135deg,
+    #009999 25%, #008283 25%,
+		#008283 50%, #009999 50%,
+		#009999 75%, #008283 75%
+  );
+  
+  background: -moz-linear-gradient(
+    135deg,
+    #009999 25%, #008283 25%,
+		#008283 50%, #009999 50%,
+		#009999 75%, #008283 75%
+  );
+  
+  background: -o-linear-gradient(
+    135deg,
+    #009999 25%, #008283 25%,
+		#008283 50%, #009999 50%,
+		#009999 75%, #008283 75%
+  );
+  
+  width: 80%;
+  height: 30px;
+  background-size: 50px 50px;
+  
+  
+  
+  -webkit-animation: bar-animation 3s linear infinite;
+
+}
+
+
+@-webkit-keyframes bar-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
