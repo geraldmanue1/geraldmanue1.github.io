@@ -460,8 +460,8 @@ margin-bottom: 12px;
 
   .main-navigation {
     display: block;
-    flex: 1 0 80%;
-    max-width: 80%;
+    flex: 1 0 84%;
+    max-width: 90%;
     padding-top: 10px;
     
   }
