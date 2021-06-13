@@ -31,11 +31,13 @@ body {
   position: relative;
 /* margin: 0 0 2.427rem; */
 margin-bottom: 12px;
+
 }
 
 .site-branding {
   flex: 1 0 80%;
   max-width: 80%;
+
 }
 
 .site-title {
@@ -44,6 +46,7 @@ margin-bottom: 12px;
   font-size: 1.3rem;
   font-weight: 400;
   word-break: break-all;
+  
 }
 
 .site-title i {
@@ -51,16 +54,56 @@ margin-bottom: 12px;
     animation: clair 1s infinite;
     font-size: 100%;
     
+    
 
 
 }
+
+
+
+element.style {
+
+@media only screen and (min-width: 83.5em)
+.main-navigation .menu {
+    border: none;
+    display: flex;
+    justify-content: 50px;
+    align-content: center;
+    
+    
+    
+    
+    /* flex-wrap: revert; */
+}
+}
+.main-navigation .menu {
+    position: relative;
+    border: 0.0625rem solid #dcdcdc;
+    width: 100%;
+
+    
+}
+.main-navigation ul {
+    list-style-type: none;
+    
+    /* margin: 50px 50px 50px 50px; */
+    /* padding: 50px 50px 50px 50px; */
+    text-align: left;
+    
+}
+
 .site-header > .top-nav-label {
   flex: 0 0 auto;
+  
 }
+
+
 
 .main-navigation {
   display: none;
   flex: 1 0 100%;
+
+
 }
 
 .main-navigation ul {
@@ -74,6 +117,7 @@ margin-bottom: 12px;
   position: relative;
   border: 0.0625rem solid #dcdcdc;
   width: 100%;
+
 }
 
 .main-navigation .menu::before {
@@ -85,6 +129,7 @@ margin-bottom: 12px;
   right: 0.625rem;
   position: absolute;
   top: -0.5625rem;
+  
 }
 
 .main-navigation .menu::after {
@@ -95,6 +140,7 @@ margin-bottom: 12px;
   right: 0.6875rem;
   position: absolute;
   top: -0.4375rem;
+  
 }
 
 .main-navigation .menu .menu-item {
@@ -108,34 +154,40 @@ margin-bottom: 12px;
   display: block;
   padding: 0.809rem 1.618rem;
   text-decoration: none;
+
 }
 
 .main-navigation .menu .menu-item a:hover,
 .main-navigation .menu .menu-item a:focus {
   background: #0b3d86; /* change couleur click arrière */
   color: #efefef;
+  
 }
 
 .main-navigation .menu .menu-item a:active {
   background: #0b3d86;
   color: #efefef;
+  
 }
 
 .main-navigation .sub-menu {
   display: none;
   border-left: 0.1875rem solid #333; /* bodure ouvert sous menu à gauche */
   border-right: 0.1875rem solid #333; /* bodure ouvert sous menu à droite */
+  
 }
 
 .menu .menu-item-has-children,
 .sub-menu .menu-item-has-children {
   position: relative;
+  
  
 }
 
 
 .main-navigation .menu .menu-item-has-children a {
   padding: 0.809rem 3.4375rem 0.809rem 1.618rem;
+  
  
 }
 
@@ -147,6 +199,7 @@ margin-bottom: 12px;
 /* Hide/Show Sub-Menu if checkbox unchecked/checked */
 .main-navigation [type="checkbox"]:checked ~ ul {
   display: block;
+  
 }
 
 /* Toggle buttons */
@@ -157,13 +210,19 @@ margin-bottom: 12px;
   margin: 0;
   overflow: hidden;
   padding: 0;
+  
+  
 }
 
 .top-nav-label .open-close-menu {
   display: block;
   position: absolute;
   z-index: 99999;
+  
+  
 }
+
+
 
 .top-nav-label .open-close-menu::before,
 .top-nav-label .open-close-menu::after {
@@ -343,6 +402,7 @@ margin-bottom: 12px;
   width: 50%;
 }
 
+
 .main-navigation .menu-item-has-children a:hover ~ .top-nav-label,
 .main-navigation .menu-item-has-children a:focus ~ .top-nav-label,
 .main-navigation .menu-item-has-children a:active ~ .top-nav-label,
@@ -432,21 +492,26 @@ margin-bottom: 12px;
 .site-header input[type="checkbox"] + .top-nav-label .open-menu {
   display: block;
 }
+ 
 
-@media only screen and (min-width: 37.5em) {
+
+@media only screen and (min-width: 75.5em) {
   .site-title {
     font-size: 1.5rem;
     
   }
 }
 
-@media only screen and (min-width: 83.5em) { /* menu barre aparrait sur telephone si en reduit la taille */
+@media only screen and (min-width:90.5em) { /* menu barre aparrait sur telephone si en reduit la taille */
   .site-branding {
-    flex: 0 0 16%;
-    max-width: 30%;
+    flex: 0 0 25%;
+    max-width: 90%;
+    padding-left: 200px;
    
 
   }
+
+
 
   .site-title {
     font-size: 1.8rem;
@@ -457,11 +522,12 @@ margin-bottom: 12px;
     display: none;
   }
 
-  .main-navigation {
+  .main-navigation { /* menu bare reduire taille */
     display: block;
-    flex: 1 0 84%;
+    flex: 1 0 50%;
     max-width: 90%;
     padding-top: 10px;
+    padding-left: 200px; /* menu bare à gauche */
     
   }
 
@@ -643,6 +709,8 @@ margin-bottom: 12px;
       font-size: 20px; /* taille Manuel gerald à gauche*/ 
  margin-bottom: 18px;
     padding-bottom: 18px;
+    padding-top: 3px;
+    padding-left: 50px;
     color: white; /* coleur écriture Manuel Gerald à gauche*/
   }
 
