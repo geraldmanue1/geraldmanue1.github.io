@@ -504,9 +504,13 @@ element.style {
 
 @media only screen and (min-width:115.5em) { /* menu barre aparrait sur telephone si en reduit la taille */
   .site-branding {
-    flex: 0 0 25%;
+   /* flex: 0 0 25%;
     max-width: 100%;
-    padding-left: 200px;
+    padding-left: 200px; */
+	    flex: 0 0 25%;
+    max-width: 100%;
+    padding-left: 20px;
+   
    
 
   }
