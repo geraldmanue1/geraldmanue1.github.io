@@ -39,17 +39,17 @@ var button4 = document.getElementsByClassName("cancel button4")[0]; /* Touche An
 // Quand utilisateur clique sur le boutton, ouvre le modal
 
 /* button html */
-btn1.onclick = function() {
+btn1.onclick = function () {
 	modal.style.display = "block";
 }
 
 /* button CSS */
-btn3.onclick = function() {
+btn3.onclick = function () {
 	modal3.style.display = "block";
 }
 
 /* button JavaScript */
-btn3.onclick = function() {
+btn3.onclick = function () {
 	modal4.style.display = "block";
 }
 /* fin button */
@@ -59,44 +59,44 @@ btn3.onclick = function() {
 // Quand utilisateur clique sur <span> (x), ferme le modal
 
 /* Span html */
-span.onclick = function() {
+span.onclick = function () {
 	modal.style.display = "none";
 
 }
 
 /* Span css */
-span1.onclick = function() {
+span1.onclick = function () {
 	modal3.style.display = "none";
 }
 
 /* JavaScript */
-span2.onclick = function() {
+span2.onclick = function () {
 	modal4.style.display = "none";
 }
 
 // pour annueler le boutton qui ecrire Annuler
 
 /* button html */
-button.onclick = function() {
+button.onclick = function () {
 	modal.style.display = "none";
 }
 
 
 /* button CSS */
-button3.onclick = function() {
+button3.onclick = function () {
 	modal3.style.display = "none";
 }
 
 
 /* button JavaScript */
-button4.onclick = function() {
+button4.onclick = function () {
 	modal4.style.display = "none";
 }
 /* fin button */
 
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
 
 	/* html */
 	if (event.target == modal) {
@@ -120,7 +120,7 @@ window.onclick = function(event) {
 
 
 $('.close-menu').on('click', function (event) {
-	event.preventDefault();  
+	event.preventDefault();
 
 
 
