@@ -8,27 +8,29 @@ body {
     max-height: 100%;
     height: 100%;
 }
-}
+
 /* width */
 body::-webkit-scrollbar {
     width: 10px;
 }
- /* Track */
+
+/* Track */
 body::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+    background: #f1f1f1;
 }
- /* Handle */
+
+/* Handle */
 body::-webkit-scrollbar-thumb {
-     background: blue; 
-   background: #888; 
-} 
+    background: blue;
+    background: #888;
+}
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+    background: #555;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'PT Serif', serif;
@@ -38,10 +40,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 a:not([href]):not([tabindex]) {
-    color: white; 
+    color: white;
     text-decoration: none;
 }
-.navbar{
+
+.navbar {
     height: 5rem;
     color: white;
     text-transform: uppercase;
@@ -52,81 +55,87 @@ a:not([href]):not([tabindex]) {
 
 }
 
-.navbar h2{
+.navbar h2 {
     font-size: 115%;
 }
 
-#navbarNav li{
+#navbarNav li {
     padding: 0 10%;
 }
 
-.logo i{
+.logo i {
     color: red;
     animation: clair 1s infinite;
 }
 
-@keyframes clair{
-    0%{
+@keyframes clair {
+    0% {
         opacity: 0.2;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-.logo{
+.logo {
     line-height: 100px;
     float: left;
 }
 
-.jumbotron{
-    background: url("ordinateur4.jpg") no-repeat center fixed; 
+.jumbotron {
+    background: url("ordinateur4.jpg") no-repeat center fixed;
     background-size: cover;
     height: 100%;
     overflow: hidden;
     max-width: 100%;
 }
 
-.message{
-    color: #003340; /* MANUEL Gerald */ 
+.message {
+    color: #003340;
+    /* MANUEL Gerald */
     font-weight: bold;
     position: block;
     margin-top: 15rem;
     text-align: center;
 }
 
-.presentation{
-    animation: nom 3s 1;
-}
-.nom{
+.presentation {
     animation: nom 3s 1;
 }
 
-@keyframes nom{
-    0%{
+.nom {
+    animation: nom 3s 1;
+}
+
+@keyframes nom {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-.titre{
+.titre {
     animation: titre 3s 1;
 }
 
-@keyframes titre{
-    0%{
+@keyframes titre {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-.phrase{
+.phrase {
     font-weight: bold;
-    color: #003366; /* couleur Bienvenue porte folio*/
+    color: #003366;
+    /* couleur Bienvenue porte folio*/
     animation: phrase 2s steps(30);
     overflow: hidden;
     white-space: nowrap;
@@ -135,36 +144,42 @@ a:not([href]):not([tabindex]) {
     margin-left: auto;
 }
 
-@keyframes phrase{
-    0%{
+@keyframes phrase {
+    0% {
         width: 0ch;
     }
-    100%{
+
+    100% {
         width: 30ch;
     }
 }
 
-.barre{
-  animation: blink 0.75s infinite;
+.barre {
+    animation: blink 0.75s infinite;
 }
 
-@keyframes blink{
-  to{opacity: .0;}
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
 }
 
 
 
 
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
 
 .card_presentation_bts {
     border-radius: 0.5em;
-    box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
 .card {
     position: relative;
     display: -ms-flexbox;
@@ -175,17 +190,17 @@ a:not([href]):not([tabindex]) {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
     padding-top: 3%;
-        padding-bottom: 3%;
+    padding-bottom: 3%;
 
 
 }
 
 
 .card1 {
-        position: relative;
+    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -194,13 +209,13 @@ a:not([href]):not([tabindex]) {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 3%;
     padding-right: 3%;
-    }
+}
 
 .card2 {
     position: relative;
@@ -212,10 +227,10 @@ a:not([href]):not([tabindex]) {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
     padding-top: 6%;
-        padding-bottom: 6%;
+    padding-bottom: 6%;
 
 
 }
@@ -233,20 +248,22 @@ a:not([href]):not([tabindex]) {
 .card-body ul p {
 
 
-padding-left : 60px;
-text-align: left;
+    padding-left: 60px;
+    text-align: left;
 
 }
 
 
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
 div {
     display: block;
-} 
+}
 
 /* nouveau */
 
@@ -255,14 +272,18 @@ div {
     min-width: 100%;
 }
 
-@media (min-width: 768px)
-.container {
-    max-width: 720px;
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
 }
-@media (min-width: 576px)
-.container {
-    max-width: 540px;
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
 }
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -279,29 +300,97 @@ div {
     margin-right: -15px;
     margin-left: -15px;
 }
+
 .text-center {
-    text-align: center!important;
+    text-align: center !important;
 }
+
 .col-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
 div {
     display: block;
 }
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, 
-.col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, 
-.col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, 
-.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, 
-.col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, 
-.col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, 
-.col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
 
     position: relative;
     width: 100%;
@@ -318,7 +407,7 @@ div {
     padding-bottom: 10px;
 }
 
-   .titre_section {
+.titre_section {
     margin-top: 3vh;
     font-size: 40px;
     text-align: center;
@@ -326,6 +415,7 @@ div {
     color: white;
     font-weight: lighter;
 }
+
 .display-4 {
     font-size: 3.5rem;
     font-weight: 300;
@@ -339,7 +429,9 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-/* https://codepen.io/VladimirVaize/pen/OJywOmp */ /* change ecriture*/
+
+/* https://codepen.io/VladimirVaize/pen/OJywOmp */
+/* change ecriture*/
 
 
 .cards_options {
@@ -347,10 +439,11 @@ h2 {
     background-color: white;
     color: black;
     border-radius: 0.5em;
-    box-shadow: 0 0 12px rgba(0,0,0 ,0.5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     padding: 2%;
     margin-bottom: 5vh;
 }
+
 .titre_card_options {
     margin-top: 1%;
     color: #19B5FE;
@@ -358,17 +451,37 @@ h2 {
     font-weight: 400;
     letter-spacing: 1px;
 }
-.h4, h4 {
+
+.h4,
+h4 {
     font-size: 1.5rem;
     color: #19B5FE;
 
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1.2;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
     margin-bottom: .5rem;
 }
@@ -391,18 +504,22 @@ h4 {
 
 
 .text-center {
-    text-align: left!important;
+    text-align: left !important;
 }
 
 .description_card {
     margin-top: 0%;
     color: #7b7b7b;
 }
+
 p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-*, ::after, ::before {
+
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
@@ -420,7 +537,7 @@ p {
     background-color: white;
     color: black;
     border-radius: 0.5em;
-    box-shadow: 0 0 12px rgba(0,0,0 ,0.5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     padding: 2%;
     margin-bottom: 6vh;
     top: 20px;
@@ -433,7 +550,7 @@ p {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    
+
 }
 
 /*
@@ -453,7 +570,7 @@ element.style {
     background-color: white;
     color: black;
     border-radius: 0.5em;
-    box-shadow: 0 0 12px rgba(0,0,0 ,0.5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     padding: 2%;
     margin-bottom: 3vh;
 }
@@ -472,7 +589,6 @@ element.style {
     background: rgb(51, 51, 51);
 }
 
- .card-text {
+.card-text {
     color: black
-  }
- 
+}

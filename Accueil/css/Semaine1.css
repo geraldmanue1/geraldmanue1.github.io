@@ -1,25 +1,25 @@
-
-
 /* width */
 body::-webkit-scrollbar {
     width: 10px;
 }
- /* Track */
+
+/* Track */
 body::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+    background: #f1f1f1;
 }
- /* Handle */
+
+/* Handle */
 body::-webkit-scrollbar-thumb {
-     background: blue; 
-   background: #888; 
-} 
+    background: blue;
+    background: #888;
+}
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+    background: #555;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'PT Serif', serif;
@@ -29,10 +29,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 a:not([href]):not([tabindex]) {
-    color: white; 
+    color: white;
     text-decoration: none;
 }
-.navbar{
+
+.navbar {
     height: 5rem;
     color: white;
     text-transform: uppercase;
@@ -43,11 +44,11 @@ a:not([href]):not([tabindex]) {
 
 }
 
-.navbar h2{
+.navbar h2 {
     font-size: 115%;
 }
 
-#navbarNav li{
+#navbarNav li {
     padding: 0 10%;
 }
 
@@ -66,27 +67,28 @@ a:not([href]):not([tabindex]) {
     border-radius: 0;
 }
 
-.titre3S1  {
+.titre3S1 {
 
-padding-top: 30px;
+    padding-top: 30px;
 }
 
 .accueil h2 {
-     padding-left:  30px;
+    padding-left: 30px;
 }
 
 .paragrapheS1 {
-padding-left:  30px;
+    padding-left: 30px;
 
 }
 
 .paragrapheS11 {
-padding-left:  60px;
-position: absolute;
-bottom: -38px;
+    padding-left: 60px;
+    position: absolute;
+    bottom: -38px;
 
 }
+
 .ObjectifS1 {
-padding-left:  30px;
+    padding-left: 30px;
 
 }

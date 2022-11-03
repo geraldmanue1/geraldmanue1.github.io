@@ -1,16 +1,16 @@
 body {
-	background: #333;
-	font-size:18px;
-	color: #ffffff;
-	margin: 0;
-	padding: 0;
-	word-wrap:break-word !important;
-	font-family: Poppins-Regular;
-    max-width: 100%;
-    width: 100%;
-    max-height: 100%;
-    height: 100%;
-	}
+  background: #333;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word !important;
+  font-family: Poppins-Regular;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
 
 .site {
   font-size: 18px;
@@ -29,8 +29,8 @@ body {
   flex-flow: row wrap;
   align-items: center;
   position: relative;
-/* margin: 0 0 2.427rem; */
-margin-bottom: 12px;
+  /* margin: 0 0 2.427rem; */
+  margin-bottom: 12px;
 
 }
 
@@ -46,15 +46,15 @@ margin-bottom: 12px;
   font-size: 1.3rem;
   font-weight: 400;
   word-break: break-all;
-  
+
 }
 
 .site-title i {
-      color: red;
-    animation: clair 1s infinite;
-    font-size: 100%;
-    
-    
+  color: red;
+  animation: clair 1s infinite;
+  font-size: 100%;
+
+
 
 
 }
@@ -63,38 +63,39 @@ margin-bottom: 12px;
 
 element.style {
 
-@media only screen and (min-width: 83.5em)
-.main-navigation .menu {
+  @media only screen and (min-width: 83.5em) .main-navigation .menu {
     border: none;
     display: flex;
     justify-content: 50px;
     align-content: center;
-    
-    
-    
-    
+
+
+
+
     /* flex-wrap: revert; */
+  }
 }
-}
+
 .main-navigation .menu {
-    position: relative;
-    border: 0.0625rem solid #dcdcdc;
-    width: 100%;
+  position: relative;
+  border: 0.0625rem solid #dcdcdc;
+  width: 100%;
 
-    
+
 }
+
 .main-navigation ul {
-    list-style-type: none;
-    
-    /* margin: 50px 50px 50px 50px; */
-    /* padding: 50px 50px 50px 50px; */
-    text-align: left;
-    
+  list-style-type: none;
+
+  /* margin: 50px 50px 50px 50px; */
+  /* padding: 50px 50px 50px 50px; */
+  text-align: left;
+
 }
 
-.site-header > .top-nav-label {
+.site-header>.top-nav-label {
   flex: 0 0 auto;
-  
+
 }
 
 
@@ -129,7 +130,7 @@ element.style {
   right: 0.625rem;
   position: absolute;
   top: -0.5625rem;
-  
+
 }
 
 .main-navigation .menu::after {
@@ -140,7 +141,7 @@ element.style {
   right: 0.6875rem;
   position: absolute;
   top: -0.4375rem;
-  
+
 }
 
 .main-navigation .menu .menu-item {
@@ -148,9 +149,12 @@ element.style {
 }
 
 .main-navigation .menu .menu-item a {
-  background: #333; /* arriere sous menu */
-  border: 0.0625rem solid #333; /* border sous menu dedans */ 
-  color: rgba(255, 255, 255, 0.6); /* couleur text sous menu */
+  background: #333;
+  /* arriere sous menu */
+  border: 0.0625rem solid #333;
+  /* border sous menu dedans */
+  color: rgba(255, 255, 255, 0.6);
+  /* couleur text sous menu */
   display: block;
   padding: 0.809rem 1.618rem;
   text-decoration: none;
@@ -159,47 +163,50 @@ element.style {
 
 .main-navigation .menu .menu-item a:hover,
 .main-navigation .menu .menu-item a:focus {
-  background: #0b3d86; /* change couleur click arrière */
+  background: #0b3d86;
+  /* change couleur click arrière */
   color: #efefef;
-  
+
 }
 
 .main-navigation .menu .menu-item a:active {
   background: #0b3d86;
   color: #efefef;
-  
+
 }
 
 .main-navigation .sub-menu {
   display: none;
-  border-left: 0.1875rem solid #333; /* bodure ouvert sous menu à gauche */
-  border-right: 0.1875rem solid #333; /* bodure ouvert sous menu à droite */
-  
+  border-left: 0.1875rem solid #333;
+  /* bodure ouvert sous menu à gauche */
+  border-right: 0.1875rem solid #333;
+  /* bodure ouvert sous menu à droite */
+
 }
 
 .menu .menu-item-has-children,
 .sub-menu .menu-item-has-children {
   position: relative;
-  
- 
+
+
 }
 
 
 .main-navigation .menu .menu-item-has-children a {
   padding: 0.809rem 3.4375rem 0.809rem 1.618rem;
-  
- 
+
+
 }
 
 /* Hide/Show Main Menu if checkbox unchecked/checked */
-.site-header > [type="checkbox"]:checked ~ .main-navigation {
+.site-header>[type="checkbox"]:checked~.main-navigation {
   display: block;
 }
 
 /* Hide/Show Sub-Menu if checkbox unchecked/checked */
-.main-navigation [type="checkbox"]:checked ~ ul {
+.main-navigation [type="checkbox"]:checked~ul {
   display: block;
-  
+
 }
 
 /* Toggle buttons */
@@ -210,16 +217,16 @@ element.style {
   margin: 0;
   overflow: hidden;
   padding: 0;
-  
-  
+
+
 }
 
 .top-nav-label .open-close-menu {
   display: block;
   position: absolute;
   z-index: 99999;
-  
-  
+
+
 }
 
 
@@ -233,7 +240,7 @@ element.style {
 }
 
 /* Hamburger button */
-.site-header > .top-nav-label {
+.site-header>.top-nav-label {
   position: relative;
   right: 0;
   top: 0;
@@ -242,8 +249,9 @@ element.style {
   border-radius: 0.1875rem;
 }
 
-.site-header > .top-nav-label .open-close-menu {
-  background: #777; /* changer couleur bare menu milieu*/
+.site-header>.top-nav-label .open-close-menu {
+  background: #777;
+  /* changer couleur bare menu milieu*/
   border-radius: 0.1875rem;
   height: 0.25rem;
   left: 0.1875rem;
@@ -252,150 +260,107 @@ element.style {
   transition: 0.25s ease-in-out 0s;
 }
 
-.site-header > .top-nav-label .open-close-menu::before,
-.site-header > .top-nav-label .open-close-menu::after {
-  background-color: #777; /* changer couleur bare menu*/
+.site-header>.top-nav-label .open-close-menu::before,
+.site-header>.top-nav-label .open-close-menu::after {
+  background-color: #777;
+  /* changer couleur bare menu*/
   height: 0.25rem;
   left: 0;
-  
+
   transition-duration: 0.3s, 0.3s;
   width: 100%;
 }
 
-.site-header > .top-nav-label .open-close-menu::before {
+.site-header>.top-nav-label .open-close-menu::before {
   top: -0.6875rem;
   transform-origin: top;
 }
 
-.site-header > .top-nav-label .open-close-menu::after {
+.site-header>.top-nav-label .open-close-menu::after {
   bottom: -0.6875rem;
   transform-origin: bottom;
 }
 
 /* Hamburger animation */
-.site-header > [type="checkbox"]:checked ~ .top-nav-label .open-close-menu {
+.site-header>[type="checkbox"]:checked~.top-nav-label .open-close-menu {
   background: none;
   transition-delay: 0s, 0.3s;
 }
 
-.site-header
-  > [type="checkbox"]:checked
-  ~ .top-nav-label
-  .open-close-menu::before,
-.site-header
-  > [type="checkbox"]:checked
-  ~ .top-nav-label
-  .open-close-menu::after {
+.site-header>[type="checkbox"]:checked~.top-nav-label .open-close-menu::before,
+.site-header>[type="checkbox"]:checked~.top-nav-label .open-close-menu::after {
   left: 0.125rem;
   transition-delay: 0s, 0.3s;
 }
 
-.site-header
-  > [type="checkbox"]:checked
-  ~ .top-nav-label
-  .open-close-menu::before {
+.site-header>[type="checkbox"]:checked~.top-nav-label .open-close-menu::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.site-header
-  > [type="checkbox"]:checked
-  ~ .top-nav-label
-  .open-close-menu::after {
+.site-header>[type="checkbox"]:checked~.top-nav-label .open-close-menu::after {
   bottom: 0;
   transform: rotate(-45deg);
 }
 
 /* Hamburger button hover/focus/active */
-.site-header > .top-nav-label:hover,
-.site-header > input[type="checkbox"]:focus ~ .top-nav-label,
-.site-header > input[type="checkbox"]:hover ~ .top-nav-label {
-  background: #777; /* arriere menu bare */ 
+.site-header>.top-nav-label:hover,
+.site-header>input[type="checkbox"]:focus~.top-nav-label,
+.site-header>input[type="checkbox"]:hover~.top-nav-label {
+  background: #777;
+  /* arriere menu bare */
 }
 
-.site-header > .top-nav-label:hover .open-close-menu,
-.site-header > .top-nav-label:hover .open-close-menu::after,
-.site-header > .top-nav-label:hover .open-close-menu::before,
-.site-header > input[type="checkbox"]:focus ~ .top-nav-label .open-close-menu,
-.site-header
-  > input[type="checkbox"]:focus
-  ~ .top-nav-label
-  .open-close-menu::before,
-.site-header
-  > input[type="checkbox"]:focus
-  ~ .top-nav-label
-  .open-close-menu::after,
-.site-header > input[type="checkbox"]:hover ~ .top-nav-label .open-close-menu,
-.site-header
-  > input[type="checkbox"]:hover
-  ~ .top-nav-label
-  .open-close-menu::before,
-.site-header
-  > input[type="checkbox"]:hover
-  ~ .top-nav-label
-  .open-close-menu::after {
+.site-header>.top-nav-label:hover .open-close-menu,
+.site-header>.top-nav-label:hover .open-close-menu::after,
+.site-header>.top-nav-label:hover .open-close-menu::before,
+.site-header>input[type="checkbox"]:focus~.top-nav-label .open-close-menu,
+.site-header>input[type="checkbox"]:focus~.top-nav-label .open-close-menu::before,
+.site-header>input[type="checkbox"]:focus~.top-nav-label .open-close-menu::after,
+.site-header>input[type="checkbox"]:hover~.top-nav-label .open-close-menu,
+.site-header>input[type="checkbox"]:hover~.top-nav-label .open-close-menu::before,
+.site-header>input[type="checkbox"]:hover~.top-nav-label .open-close-menu::after {
   background: #efefef;
 }
 
-.site-header
-  > input[type="checkbox"]:checked
-  ~ .top-nav-label:hover
-  .open-close-menu,
-.site-header
-  > input[type="checkbox"]:checked:focus
-  ~ .top-nav-label
-  .open-close-menu,
-.site-header
-  > input[type="checkbox"]:checked:hover
-  ~ .top-nav-label
-  .open-close-menu {
+.site-header>input[type="checkbox"]:checked~.top-nav-label:hover .open-close-menu,
+.site-header>input[type="checkbox"]:checked:focus~.top-nav-label .open-close-menu,
+.site-header>input[type="checkbox"]:checked:hover~.top-nav-label .open-close-menu {
   background: none;
 }
 
 /* Plus/Minus button */
-.main-navigation .menu-item-has-children > .top-nav-label {
+.main-navigation .menu-item-has-children>.top-nav-label {
   position: absolute;
   right: 0.0625rem;
   top: 0.0625rem;
   height: 3.3125rem;
   width: 3.3125rem;
   background-color: #333;
- 
+
 
 }
 
-.main-navigation .menu-item-has-children > .top-nav-label .open-close-menu {
+.main-navigation .menu-item-has-children>.top-nav-label .open-close-menu {
   height: 100%;
   width: 100%;
-  
+
 }
 
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label
-  .open-close-menu::after,
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label
-  .open-close-menu::before {
+.main-navigation .menu-item-has-children>.top-nav-label .open-close-menu::after,
+.main-navigation .menu-item-has-children>.top-nav-label .open-close-menu::before {
   background: #777;
   transition: transform 0.25s ease-out;
 }
 
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label
-  .open-close-menu::before {
+.main-navigation .menu-item-has-children>.top-nav-label .open-close-menu::before {
   height: 50%;
   left: calc(50% - 0.1875rem / 2);
   top: 25%;
   width: 0.1875rem;
 }
 
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label
-  .open-close-menu::after {
+.main-navigation .menu-item-has-children>.top-nav-label .open-close-menu::after {
   height: 0.1875rem;
   left: 25%;
   top: calc(50% - 0.1875rem / 2);
@@ -403,62 +368,39 @@ element.style {
 }
 
 
-.main-navigation .menu-item-has-children a:hover ~ .top-nav-label,
-.main-navigation .menu-item-has-children a:focus ~ .top-nav-label,
-.main-navigation .menu-item-has-children a:active ~ .top-nav-label,
-.main-navigation .menu-item-has-children:focus-within a ~ .top-nav-label {
+.main-navigation .menu-item-has-children a:hover~.top-nav-label,
+.main-navigation .menu-item-has-children a:focus~.top-nav-label,
+.main-navigation .menu-item-has-children a:active~.top-nav-label,
+.main-navigation .menu-item-has-children:focus-within a~.top-nav-label {
   background: #efefef;
 }
 
 /* Plus/Minus button animation */
-.main-navigation
-  [type="checkbox"]:checked
-  ~ .top-nav-label
-  .open-close-menu::before {
+.main-navigation [type="checkbox"]:checked~.top-nav-label .open-close-menu::before {
   transform: rotate(90deg);
 }
 
-.main-navigation
-  [type="checkbox"]:checked
-  ~ .top-nav-label
-  .open-close-menu::after {
+.main-navigation [type="checkbox"]:checked~.top-nav-label .open-close-menu::after {
   transform: rotate(180deg);
 }
 
 /* Plus/Minus button hover/focus/active */
-.main-navigation .menu-item-has-children > .top-nav-label:hover {
+.main-navigation .menu-item-has-children>.top-nav-label:hover {
   background: #333;
-  
+
 }
 
-.main-navigation
-  .menu-item-has-children
-  input[type="checkbox"]:focus
-  ~ .top-nav-label {
+.main-navigation .menu-item-has-children input[type="checkbox"]:focus~.top-nav-label {
   background: #777;
-  
+
 }
 
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label:hover
-  .open-close-menu::after,
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label:hover
-  .open-close-menu::before,
-.main-navigation
-  .menu-item-has-children
-  input[type="checkbox"]:focus
-  ~ .top-nav-label
-  .open-close-menu::before,
-.main-navigation
-  .menu-item-has-children
-  input[type="checkbox"]:focus
-  ~ .top-nav-label
-  .open-close-menu::after {
+.main-navigation .menu-item-has-children>.top-nav-label:hover .open-close-menu::after,
+.main-navigation .menu-item-has-children>.top-nav-label:hover .open-close-menu::before,
+.main-navigation .menu-item-has-children input[type="checkbox"]:focus~.top-nav-label .open-close-menu::before,
+.main-navigation .menu-item-has-children input[type="checkbox"]:focus~.top-nav-label .open-close-menu::after {
   background: #efefef;
- 
+
 }
 
 /* Hide and place checkbox over the toggle buttons */
@@ -470,7 +412,7 @@ element.style {
   z-index: 2;
 }
 
-.site-header > input[type="checkbox"] {
+.site-header>input[type="checkbox"] {
   right: 0.5rem;
   top: 2.75rem;
 }
@@ -478,38 +420,40 @@ element.style {
 .site-header .menu-item-has-children input[type="checkbox"] {
   right: 1rem;
   top: 1rem;
-  
+
 }
 
 /* Display the right label if checkbox checked */
-.site-header input[type="checkbox"] + .top-nav-label .close-menu,
-.site-header input[type="checkbox"]:checked + .top-nav-label .open-menu {
+.site-header input[type="checkbox"]+.top-nav-label .close-menu,
+.site-header input[type="checkbox"]:checked+.top-nav-label .open-menu {
   display: none;
-  
+
 }
 
-.site-header input[type="checkbox"]:checked + .top-nav-label .close-menu,
-.site-header input[type="checkbox"] + .top-nav-label .open-menu {
+.site-header input[type="checkbox"]:checked+.top-nav-label .close-menu,
+.site-header input[type="checkbox"]+.top-nav-label .open-menu {
   display: block;
 }
- 
+
 
 
 @media only screen and (min-width: 75.5em) {
   .site-title {
     font-size: 1.5rem;
-    
+
   }
 }
-@media only screen and (min-width:95.5em) { /* menu barre aparrait sur telephone si en reduit la taille */
 
-/* @media only screen and (min-width:115.5em) { /* menu barre aparrait sur telephone si en reduit la taille */
+@media only screen and (min-width:95.5em) {
+  /* menu barre aparrait sur telephone si en reduit la taille */
+
+  /* @media only screen and (min-width:115.5em) { /* menu barre aparrait sur telephone si en reduit la taille */
   .site-branding {
- flex: 0 0 17%;
+    flex: 0 0 17%;
     max-width: 100%;
-    padding-left: 2px; 
-   
-   
+    padding-left: 2px;
+
+
 
   }
 
@@ -524,13 +468,15 @@ element.style {
     display: none;
   }
 
-  .main-navigation { /* menu bare reduire taille */
+  .main-navigation {
+    /* menu bare reduire taille */
     display: block;
     flex: 1 0 50%;
-    max-width:100%;
+    max-width: 100%;
     padding-top: 10px;
-    padding-left: 200px; /* menu bare à gauche */
-    
+    padding-left: 200px;
+    /* menu bare à gauche */
+
   }
 
   .main-navigation .menu {
@@ -544,7 +490,7 @@ element.style {
     display: none;
   }
 
-  .main-navigation .menu > .menu-item {
+  .main-navigation .menu>.menu-item {
     margin-left: 0.3125rem;
   }
 
@@ -553,74 +499,79 @@ element.style {
     border: none;
     color: rgba(255, 255, 255, 0.6);
     padding: 0.4045rem 0.809rem;
-    font-size: 20px; /* regle taille menu */
-    font-family: Poppins-Regular; /* regle écriture menu */
+    font-size: 20px;
+    /* regle taille menu */
+    font-family: Poppins-Regular;
+    /* regle écriture menu */
   }
 
   .main-navigation .menu .menu-item a:hover {
-    background: #777; /* arriere plan menu */
-    color: white; /* coleur arriere plan */
+    background: #777;
+    /* arriere plan menu */
+    color: white;
+    /* coleur arriere plan */
     text-decoration: none;
 
-    
+
   }
 
- 
- 
+
+
   .main-navigation .menu .menu-item a:active {
-    color: black; /* click changer couleur écriture */
+    color: black;
+    /* click changer couleur écriture */
     text-decoration: right;
-    
+
 
   }
 
-  .main-navigation .menu-item-has-children > .top-nav-label {
+  .main-navigation .menu-item-has-children>.top-nav-label {
     position: absolute;
     right: 0;
     top: 0;
     height: 2.5625rem;
     width: 2.5625rem;
-    
+
   }
 
-  .main-navigation .menu-item-has-children a:hover ~ .top-nav-label,
-  .main-navigation .menu-item-has-children a:focus ~ .top-nav-label,
-  .main-navigation .menu-item-has-children a:active ~ .top-nav-label,
-  .main-navigation .menu-item-has-children:focus-within a ~ .top-nav-label {
+  .main-navigation .menu-item-has-children a:hover~.top-nav-label,
+  .main-navigation .menu-item-has-children a:focus~.top-nav-label,
+  .main-navigation .menu-item-has-children a:active~.top-nav-label,
+  .main-navigation .menu-item-has-children:focus-within a~.top-nav-label {
     background: #fff;
-    
+
   }
 
   .main-navigation .menu .menu-item-has-children a {
     padding: 0.4045rem 0.809rem;
-    
+
 
   }
 
-  .main-navigation .menu .menu-item-has-children > a::after {
+  .main-navigation .menu .menu-item-has-children>a::after {
     display: inline-block;
-    content: "<i class="fas fa-caret-down"></i>";
+    content: "<i class=" fas fa-caret-down"></i>";
     margin-left: 0.4045rem;
     text-decoration: none;
     position: relative;
-   
-   
+
+
   }
 
- 
+
 
   /* Show submenu on hover/focus */
-  .main-navigation .menu-item-has-children > a:hover ~ ul,
-  .main-navigation .menu-item-has-children:hover > a ~ ul,
-  .main-navigation .menu-item-has-children > a ~ ul:hover,
-  .main-navigation .menu-item-has-children > a:focus ~ ul {
+  .main-navigation .menu-item-has-children>a:hover~ul,
+  .main-navigation .menu-item-has-children:hover>a~ul,
+  .main-navigation .menu-item-has-children>a~ul:hover,
+  .main-navigation .menu-item-has-children>a:focus~ul {
     display: block;
     z-index: 999;
 
   }
 
   /* Same rules - Focus-within not supported by Edge/IE. Unsupported selectors cause the entire block to be ignored, so we must repeat all styles separately. */
-  .main-navigation .menu-item-has-children:focus-within > a ~ ul {
+  .main-navigation .menu-item-has-children:focus-within>a~ul {
     display: block;
     z-index: 999;
   }
@@ -657,7 +608,7 @@ element.style {
     display: none;
   }
 
-  .main-navigation .sub-menu .menu-item-has-children > a::after {
+  .main-navigation .sub-menu .menu-item-has-children>a::after {
     content: "\23F5";
     vertical-align: top;
   }
@@ -669,10 +620,12 @@ element.style {
   }
 }
 
-@media only screen and (min-width: 88em) and (any-pointer: coarse) { /* + telephone barre */ 
+@media only screen and (min-width: 88em) and (any-pointer: coarse) {
+
+  /* + telephone barre */
   .main-navigation .menu .menu-item-has-children a {
     padding-right: 3rem;
-    
+
 
   }
 
@@ -684,64 +637,65 @@ element.style {
     display: block;
     right: 0.625rem;
     top: 0.625rem;
-    
+
   }
 
-  .main-navigation .menu-item-has-children > a:focus ~ ul,
-  .main-navigation
-    .menu-item-has-children
-    > input[type="checkbox"]:not(:checked):focus
-    ~ ul {
+  .main-navigation .menu-item-has-children>a:focus~ul,
+  .main-navigation .menu-item-has-children>input[type="checkbox"]:not(:checked):focus~ul {
     display: none;
   }
 
-  .main-navigation .menu .menu-item-has-children > a::after,
-  .main-navigation .sub-menu .menu-item-has-children > a::after {
+  .main-navigation .menu .menu-item-has-children>a::after,
+  .main-navigation .sub-menu .menu-item-has-children>a::after {
     display: none;
 
   }
 }
+
 /*
 @media only screen and (min-width: 100em) {
   .site {
     max-width: 80rem;
   }*/
 
-  .site-title {
-      font-size: 20px; /* taille Manuel gerald à gauche*/ 
- margin-bottom: 18px;
-    padding-bottom: 18px;
-    padding-top: 3px;
-    padding-left: 50px;
-    color: white; /* coleur écriture Manuel Gerald à gauche*/
-  }
+.site-title {
+  font-size: 20px;
+  /* taille Manuel gerald à gauche*/
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  padding-top: 3px;
+  padding-left: 50px;
+  color: white;
+  /* coleur écriture Manuel Gerald à gauche*/
+}
 
-  .main-navigation .sub-menu ul {
-    left: 100%;
-    top: 0;
-    max-width: 100%;
-  }
+.main-navigation .sub-menu ul {
+  left: 100%;
+  top: 0;
+  max-width: 100%;
+}
 
-  .main-navigation .sub-menu .menu-item-has-children > a::after {
-    content: "";
-  }
+.main-navigation .sub-menu .menu-item-has-children>a::after {
+  content: "";
+}
 
 
 .copyright {
-    text-align: center;
-    padding: 30px 0;
-    background: #28023D;
-}
-p {
-    line-height: 1.6;
-    font-size: 1.05em;
-    font-weight: 400;
-    color: #777;
+  text-align: center;
+  padding: 30px 0;
+  background: #28023D;
 }
 
- .card-text {
-    color: black
-  }
+p {
+  line-height: 1.6;
+  font-size: 1.05em;
+  font-weight: 400;
+  color: #777;
+}
+
+.card-text {
+  color: black
+}
 
 footer {
 
@@ -762,15 +716,16 @@ footer {
 
 .competences a:link {
   color: blue;
-  
+
 }
 
 .competences a:visited {
   color: purple;
-  
+
 }
 
-.competences a:focus, .competences a:hover {
+.competences a:focus,
+.competences a:hover {
   border-bottom: 1px solid;
 
 }
