@@ -1,84 +1,82 @@
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
   }
-}
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  
+  }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+  .container1 {
+    padding: 0 16px;
+      background-color: white;
+  
+  }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
 
-.container {
-  padding: 0 16px;
+  .box {
+    display: flex;
+  }
 
-}
+  .un {
+    flex: 1 1 auto;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.23);
+    margin : 10px 10px 10px 10px;
 
-.container1 {
-  padding: 0 16px;
-  background-color: white;
+  }
 
-}
+  .sous-un {
+    flex: 1 1 auto;
+    background-color: white;
+    margin : 10px 10px 10px 10px;
 
-.container::after,
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-.box {
-  display: flex;
-}
-
-.un {
-  flex: 1 1 auto;
-  background-color: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.23);
-  margin: 10px 10px 10px 10px;
-
-}
-
-.sous-un {
-  flex: 1 1 auto;
-  background-color: white;
-  margin: 10px 10px 10px 10px;
-
-}
+  }
 
 .petit {
   size: 5px;
@@ -92,19 +90,16 @@
   line-height: 20px;
 
 }
-
 .petitpara {
   size: 5px;
   font-size: 15px;
   line-height: 15px;
 
 }
-
-.partie-un {
-  color: black;
-
-}
-
+  .partie-un {
+color: black;
+size;
+  }
 /*
   .deux {
     flex: 1 1 auto;

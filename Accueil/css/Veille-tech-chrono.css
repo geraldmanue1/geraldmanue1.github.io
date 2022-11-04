@@ -1,6 +1,6 @@
-body {
+body{
    background: #6d6b6b;
-
+ 
    font-family: "Open Sans", sans-serif;
    font-size: 18px;
    position: relative;
@@ -13,35 +13,32 @@ body {
 
 /* width */
 body::-webkit-scrollbar {
-   width: 10px;
+    width: 10px;
 }
-
-/* Track */
+ /* Track */
 body::-webkit-scrollbar-track {
-   background: #f1f1f1;
+  background: #f1f1f1; 
 }
-
-/* Handle */
+ /* Handle */
 body::-webkit-scrollbar-thumb {
-   background: blue;
-   background: #888;
-}
+     background: blue; 
+   background: #888; 
+} 
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-   background: #555;
+  background: #555; 
 }
 
-* {
-   margin: 0;
-   padding: 0;
-   font-family: 'PT Serif', serif;
-   box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    box-sizing: border-box;
 
 
 }
-
-* {
+ * {
    -webkit-box-sizing: border-box;
    -moz-box-sizing: border-box;
    box-sizing: border-box;
@@ -118,7 +115,7 @@ h1 span {
    width: 95%;
    padding: 0 15px;
    color: #666;
-   text-align: left;
+    text-align: left;
 }
 
 .timeline-content h3 {
@@ -131,7 +128,7 @@ h1 span {
 .timeline-content span {
    font-size: 15px;
    color: #a4a4a4;
-
+   
 }
 
 .timeline-content p {
@@ -139,7 +136,7 @@ h1 span {
    line-height: 1.5em;
    word-spacing: 1px;
    color: #888;
-
+  
 }
 
 
@@ -148,12 +145,10 @@ h1 span {
       left: 8px;
       width: 2px;
    }
-
    .timeline-block {
       width: 100%;
       margin-bottom: 30px;
    }
-
    .timeline-block-right {
       float: none;
    }
@@ -162,4 +157,4 @@ h1 span {
       float: none;
       direction: ltr;
    }
-}
+} 
