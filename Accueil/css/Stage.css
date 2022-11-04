@@ -32,8 +32,12 @@ li a {
     border: 1px solid rgb(149 176 218);
 
 }
-  
+
+@media (max-width: 1000px) {
 #taille-photo {
+  max-width:100%;
+  max-height:100%;
+  
   
 }
   
