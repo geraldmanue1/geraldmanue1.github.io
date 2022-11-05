@@ -778,3 +778,10 @@ footer {
 .competences a:active {
   color: red;
 }
+
+@media screen and (max-width: 1000px) {
+#espace-bas {
+	    margin-bottom: 100px;
+}
+	
+}
