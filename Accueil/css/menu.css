@@ -783,5 +783,11 @@ footer {
 #espace-bas {
 	    margin-bottom: 80px;
 }
+
+#vscodelogo {
+	title: "Visual Studio Code";
+		title: VisualStudioCode;
+
+}
 	
 }
