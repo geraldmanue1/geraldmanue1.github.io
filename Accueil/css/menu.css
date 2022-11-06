@@ -782,6 +782,12 @@ footer {
 @media screen and (max-width: 800px) {
 #espace-bas {
 	    margin-bottom: 75px;
+	
+}
+	
+#espace-bas-1  {
+	    margin-bottom: 60px;
+	
 }
 	
 }
