@@ -781,13 +781,7 @@ footer {
 
 @media screen and (max-width: 800px) {
 #espace-bas {
-	    margin-bottom: 80px;
-}
-
-#vscodelogo {
-	title: "Visual Studio Code";
-		title: VisualStudioCode;
-
+	    margin-bottom: 75px;
 }
 	
 }
