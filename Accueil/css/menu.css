@@ -501,7 +501,7 @@ element.style {
     
   }
 }
-@media only screen and (min-width:95.5em) { /* menu barre aparrait sur telephone si en reduit la taille */
+@media only screen and (min-width:75.5em) { /* menu barre aparrait sur telephone si en reduit la taille */
 
 /* @media only screen and (min-width:115.5em) { /* menu barre aparrait sur telephone si en reduit la taille */
   .site-branding {
