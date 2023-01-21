@@ -640,6 +640,7 @@ element.style {
     left: 30%;
     position: absolute;
     /* top: -0.5625rem; */
+	  top: -0.540rem;
   }
 
   .main-navigation .sub-menu::after {
